@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'webportfolio';
+  sideBar() {
+    console.log("Side bar open");
+  }
 }

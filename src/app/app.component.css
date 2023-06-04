@@ -1,0 +1,77 @@
+/*mobile design*/
+#nav-bar-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+/* image container */
+#container-img {
+  width: 50%;
+}
+#container-img-2 {
+  width: 50%;
+}
+
+/* image style */
+#container-img #hamburgIcon{
+  float: left;
+  width: 35px;
+  height: 28px;
+  padding: 1.2em;
+}
+#container-img-2 #logo{
+  float: right;
+  width: 92px;
+  height: 30px;
+  padding: 1.2em;
+}
+
+/* welcome page container */
+#welcome-page-container {
+  margin-top: 10em;
+  padding-left: 2em;
+}
+
+#welcome-page-container h1 {
+  color: #5843d6;
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+}
+#welcome-page-container h2 {
+  text-align: center;
+  margin-left: -2em;
+  font-stretch:extra-expanded;
+  font-style: italic;
+}
+h2 span {
+  color: #d34747;
+  font-family: 'Times New Roman', Times, serif;
+}
+#pink-color {
+  color: #ec3878;
+}
+
+#welc-page-btn-container {
+  display: flex;
+  align-items: center;
+}
+#welc-page-btn-container button {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.3em;
+  border-radius: 0.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: white;
+  font-weight: 750;
+  border: 0;
+  border-collapse:collapse;
+  background-color: #000081;
+  box-shadow: -0.1em 0.1em 0.1em 0.1em #d0d0df;
+}
+
+
