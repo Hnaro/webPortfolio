@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'webportfolio';
+  isVisible:any = null;
+
   sideBar() {
-    console.log("Side bar open");
+    console.log("test")
+    this.isVisible = false;
   }
 }
