@@ -1,19 +1,53 @@
-<app-nav-bar-slider ></app-nav-bar-slider>
-
-<div id="nav-bar-container">
-  <div id="container-img">
-    <img (click)="sideBar()" id="hamburgIcon" src="../assets/img/hamburgIcon.png" alt="" srcset="">
+<div id="outer-container">
+  <div class="main-container" id="slider-bar-container">
+    <app-nav-bar-slider [visibility]="isVisible" (updateDataToParent)="recieveUpdatedData($event)"></app-nav-bar-slider>
+    <div id="nav-bar-container">
+      <div id="container-img">
+        <img (click)="sideBar()" id="hamburgIcon" src="../assets/img/hamburgIcon.png" alt="" srcset="">
+      </div>
+      <div id="container-img-2">
+        <img id="logo" src="../assets/img/Hnaro-logo.png" alt="" srcset="">
+      </div>
+    </div>
   </div>
-  <div id="container-img-2">
-    <img id="logo" src="../assets/img/Hnaro-logo.png" alt="" srcset="">
-  </div>
-</div>
+  
+  
+  <div class="main-container" id="main-container">
+    <!-- if other page is open this is hidden -->
+    <!-- HOME PAGE -->
+    <section [hidden]="false" id="home-page">
+      <!-- welcome page -->
+      <div id="welcome-page-container">
+        <H1>Hi There <br> Im <span id="pink-color">Arhon</span></H1>
+        <h2>I am into <span>web developing</span></h2>
+      </div>
+      <div id="welc-page-btn-container">
+        <button>About me</button>
+      </div>
+    </section>
+    
+    <!-- SKILLS PAGE  -->
+    <section [hidden]="true" id="skills-page">
+      <app-skills-component></app-skills-component>
+    </section>
+    
+    <!-- EDUCATION AND EXPERIENCE PAGE -->
+    <section [hidden]="true">
+    
+    </section>
+    
+    <!-- ABOUT PAGE -->
+    <section [hidden]="true">
+    
+    </section>
 
-<!-- welcome page -->
-<div id="welcome-page-container">
-  <H1>Hi There <br> Im <span id="pink-color">Arhon</span></H1>
-  <h2>I am into <span>web developing</span></h2>
-</div>
-<div id="welc-page-btn-container">
-  <button>About me</button>
+    <footer [hidden]="true"> 
+      <header>Did you find the skills you're looking for? </header>
+      <input type="text" placeholder="Send message to the developer...">
+      <p>Thank you for visiting my <br> website hope you found what you are looking for</p>
+      <div id="copyright-container">
+        &copy;Copyright 2023
+      </div>
+    </footer> 
+  </div>
 </div>

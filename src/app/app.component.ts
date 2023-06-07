@@ -7,10 +7,18 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
   title = 'webportfolio';
-  isVisible:any = null;
+  isVisible:boolean | undefined;
+  messageFromParent:string="";
+
+  recieveUpdatedData(e:any) {
+    this.isVisible = e;
+    console.log("receieve from child");
+  }
 
   sideBar() {
-    console.log("test")
+    // send false to child to open the sidebar
     this.isVisible = false;
+    //this.messageFromParent = "open";
+    console.log("Parent message to child: "+this.messageFromParent);
   }
 }
