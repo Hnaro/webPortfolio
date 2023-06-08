@@ -8,10 +8,12 @@
 }
 
 #slider-bar-head-cont {
-  position: relative;
   display: flex;
-  justify-content: center;
-  width: 100%;
+}
+
+#side-bar-logo-cont {
+  width: 90%;
+  background-color: white;
 }
 
 #slider-bar-head-cont img {
@@ -22,6 +24,7 @@
 }
 
 #slider-bar-head-cont button {
+  padding-top: 0.7em;
   font-size: 1.5em;
   border: 0px;
   color:#ec3878;
@@ -38,7 +41,7 @@ ul {
 
 li {
   margin-top: 2em;
-  border-left: 0.5em solid #ec3878;
+  border-left: 0.3em solid #ec3878;
 }
 
 li button {

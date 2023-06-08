@@ -28,8 +28,8 @@
 }
 #container-img-2 #logo{
   float: right;
-  width: 92px;
-  height: 30px;
+  width: 102px;
+  height: 40px;
   padding: 1.2em;
 }
 
@@ -81,7 +81,7 @@ h2 span {
 }
 
 #outer-container {
- /* background: linear-gradient(#5d2e9c 5%, #5843d6 95%);*/
+ background: linear-gradient(#5d2e9c 0.5%, #5843d6 30%);
 }
 
 /*skill page styles*/
@@ -94,7 +94,7 @@ footer {
   bottom: 0;
   color: white;
   font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-  height: 384px; 
+  height: 384px;
   background-color: #41329d;
   text-align: center;
 }
