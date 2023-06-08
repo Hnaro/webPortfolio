@@ -1,0 +1,62 @@
+/* footer design */
+#footer-container {
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    height: 24em;
+    margin-top: -0.5em;
+    background-color: #41329d;
+    text-align: center;
+  }
+  #footer-container header {
+    text-align: center;
+    margin: 0.2em;
+    padding: 0.7em;
+    font-size: 1em;
+    font-weight: 900;
+    color:white;
+  }
+  
+  #footer-container input::placeholder {
+    color: #1a1440;
+    font-weight: 900;
+    font-size: 1.1em;
+    padding: 1em;
+    transform: translateY(-60px);
+    opacity: 0.9;
+  }
+  
+  #footer-container input[type=text]{
+    color: #1a1440;
+    font-weight: 900;
+    padding: 0.5em;
+    opacity: 0.9;
+    border: 0px solid none;
+    padding-left: 1em;
+  }
+  
+  #footer-container input {
+    margin: 0 auto;
+    height: 15em;
+    width: 80%;
+    border-radius: 1.2em;
+    border: 0px;
+  }
+  
+  #footer-container #copyright-container {
+    margin: 0 auto;
+    margin-top: 2em ;
+    padding: 0.5em;
+    font-weight: 900;
+    width: 120px;
+    border-radius: 0.7em;
+    font-size: 0.8em;
+    background-color: #ec3878;
+  }
+  
+  #footer-container p {
+    margin-top: 1em;
+    font-size: 0.9em;
+    font-weight: 900;
+  }

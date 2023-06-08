@@ -7,6 +7,8 @@ import { NavBarSliderComponent } from './nav-bar-slider/nav-bar-slider.component
 import { SkillsComponentComponent } from './skills-component/skills-component.component';
 import { SkillBoxComponentComponent } from './skill-box-component/skill-box-component.component';
 import { NavbarComponentComponent } from './navbar-component/navbar-component.component';
+import { FooterComponentComponent } from './footer-component/footer-component.component';
+import { HomePageComponentComponent } from './home-page-component/home-page-component.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { NavbarComponentComponent } from './navbar-component/navbar-component.co
     NavBarSliderComponent,
     SkillsComponentComponent,
     SkillBoxComponentComponent,
-    NavbarComponentComponent
+    NavbarComponentComponent,
+    FooterComponentComponent,
+    HomePageComponentComponent
   ],
   imports: [
     BrowserModule,

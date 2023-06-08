@@ -1,10 +1,11 @@
 #nav-bar-slider-container {
-  position:fixed;
-  width: 80%;
+  position: fixed;
+  width: 100%;
   height: 100%;
-  background:white;
+  margin-top: -3em;
+  background: white;
   z-index: 500000;
-  box-shadow: -0.2em 0.2em 0.2em 0.3em grey ;
+  box-shadow: -0.2em 0.2em 0.2em 0.3em grey;
 }
 
 #slider-bar-head-cont {
@@ -13,13 +14,14 @@
 
 #side-bar-logo-cont {
   width: 90%;
+  float: left;
   background-color: white;
 }
 
 #slider-bar-head-cont img {
   margin-right: 7em;
-  width: 92px;
-  height: 30px;
+  width: 102px;
+  height: 40px;
   padding: 1.2em;
 }
 
@@ -32,7 +34,15 @@
 }
 
 #slider-bar-link-cont {
-  margin-top: 4em;
+  margin-top: 3em;
+}
+
+#slider-bar-footer {
+  position: relative;
+  height: 15em;
+  bottom: -5em;
+  z-index: 6000000;
+  background-color: #ec3878;
 }
 
 ul {
@@ -47,7 +57,7 @@ li {
 li button {
   color: #5843d6;
   font-size: 1em;
-  font-weight: 600;
+  font-weight: 900;
   border: 0px;
   background: transparent;
 }

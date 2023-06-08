@@ -15,6 +15,11 @@ export class AppComponent {
     console.log("receieve from child");
   }
 
+  handlevisibility(e:any) {
+    this.isVisible = e;
+    console.log("recieved from child: "+e)
+  }
+
   sideBar() {
     // send false to child to open the sidebar
     this.isVisible = false;

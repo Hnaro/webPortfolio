@@ -1,14 +1,12 @@
 /*mobile design*/
 #nav-bar-container {
+  position: absolute;
   display: flex;
   width: 100%;
+  top: 0px;
+  background:transparent;
   justify-content: center;
-}
-
-/* div arrange*/
-.main-container {
-  display: inline-block;
-  width: 100%;
+  z-index: 50000;
 }
 
 /* image container */
@@ -31,6 +29,14 @@
   width: 102px;
   height: 40px;
   padding: 1.2em;
+}
+
+
+/* div arrange*/
+.main-container {
+  margin-top: 3em;
+  display: inline-block;
+  width: 100%;
 }
 
 /* welcome page container */
@@ -67,7 +73,7 @@ h2 span {
 #welc-page-btn-container button {
   text-align: center;
   margin: 0 auto;
-  font-size: 1.3em;
+  font-size: 1.2em;
   border-radius: 0.5em;
   padding-left: 1.5em;
   padding-right: 1.5em;
@@ -77,11 +83,11 @@ h2 span {
   font-weight: 750;
   border: 0px;
   background-color: #000081;
-  box-shadow: -0.1em 0.2em 0.1em 0.1em #dadada;
+  box-shadow: -0.1em 0.1em 0.1em 0.1em #909090;
 }
 
 #outer-container {
- background: linear-gradient(#5d2e9c 0.5%, #5843d6 30%);
+ /*background: linear-gradient(#5d2e9c 0.5%, #5843d6 30%);*/
 }
 
 /*skill page styles*/
@@ -89,64 +95,10 @@ h2 span {
   margin-bottom: 10em;
 }
 
-/* footer design */
 footer {
-  bottom: 0;
-  color: white;
-  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-  height: 384px;
-  background-color: #41329d;
-  text-align: center;
-}
-footer header {
-  text-align: center;
-  margin: 0.2em;
-  padding: 0.7em;
-  font-size: 1em;
-  font-weight: 900;
-  color:white;
-}
 
-footer input::placeholder {
-  color: #1a1440;
-  font-weight: 900;
-  font-size: 1.1em;
-  padding: 1em;
-  transform: translateY(-60px);
-  opacity: 0.9;
+  width: 100%;
+  position: absolute;
+  height: 25em;
+  top: 0px;
 }
-
-footer input[type=text]{
-  color: #1a1440;
-  font-weight: 900;
-  padding: 0.5em;
-  opacity: 0.9;
-  border: 0px solid none;
-  padding-left: 1em;
-}
-
-footer input {
-  margin: 0 auto;
-  height: 15em;
-  width: 80%;
-  border-radius: 1.2em;
-  border: 0px;
-}
-
-footer #copyright-container {
-  margin: 0 auto;
-  margin-top: 2em ;
-  padding: 0.5em;
-  font-weight: 900;
-  width: 120px;
-  border-radius: 0.7em;
-  font-size: 0.8em;
-  background-color: #ec3878;
-}
-
-footer p {
-  margin-top: 1em;
-  font-size: 0.9em;
-  font-weight: 900;
-}
-

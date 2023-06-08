@@ -1,0 +1,44 @@
+#welc-page-btn-container {
+    display: flex;
+    align-items: center;
+}
+/* about me button style */
+#welc-page-btn-container button {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2em;
+    border-radius: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: white;
+    font-weight: 750;
+    border: 0px;
+    background-color: #000081;
+    box-shadow: -0.1em 0.1em 0.1em 0.1em #909090;
+}
+#home-page-container {
+    margin-top: 10em;
+    padding-left: 2em;
+}
+
+#home-page-container h1 {
+    color: #5843d6;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+}
+#home-page-container h2 {
+    text-align: center;
+    margin-left: -2em;
+    font-stretch:extra-expanded;
+    font-style: italic;
+}
+h2 span {
+    color: #d34747;
+    font-family: 'Times New Roman', Times, serif;
+}
+#pink-color {
+    color: #ec3878;
+}

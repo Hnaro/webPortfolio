@@ -1,0 +1,32 @@
+/*mobile design*/
+#nav-bar-container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 0px;
+    background:transparent;
+    justify-content: center;
+    z-index: 50000;
+  }
+  
+  /* image container */
+  #container-img {
+    width: 50%;
+  }
+  #container-img-2 {
+    width: 50%;
+  }
+
+  /* image style */
+#container-img #hamburgIcon{
+  float: left;
+  width: 35px;
+  height: 28px;
+  padding: 1.2em;
+}
+#container-img-2 #logo{
+  float: right;
+  width: 102px;
+  height: 40px;
+  padding: 1.2em;
+}
