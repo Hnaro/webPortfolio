@@ -1,6 +1,6 @@
 <div id="outer-container">
   <div class="main-container" id="slider-bar-container">
-    <app-nav-bar-slider [visibility]="isVisible" (updateDataToParent)="recieveUpdatedData($event)"></app-nav-bar-slider>
+    <app-nav-bar-slider [visibility]="isVisible" (updateHomeVisibility)="showHome($event)" (updateDataToParent)="recieveUpdatedData($event)"></app-nav-bar-slider>
    <!--<div id="nav-bar-container">
       <div id="container-img">
         <img (click)="sideBar()" id="hamburgIcon" src="../assets/img/hamburgIcon.png" alt="" srcset="">
@@ -9,7 +9,7 @@
         <img id="logo" src="../assets/img/Hnaro-logo.png" alt="" srcset="">
       </div>
     </div> -->
-    <app-navbar-component (isVisible)="handlevisibility($event)"></app-navbar-component>
+    <app-navbar-component [isEduAndexpActive]="educationAndExpPageVisibility" [isAboutpgActive]="aboutPageVisibility" [isSkillsActive]="skillspgVisibility" [isHomeActive]="homepgVisibility" (isVisible)="handlevisibility($event)"></app-navbar-component>
   </div>
 
     <!-- if other page is open this is hidden -->
@@ -22,14 +22,20 @@
         <h2>I am into <span>web developing</span></h2>
       </div>
       <div id="welc-page-btn-container">
-        <button>About me</button>
+        <button>About me</button> 
       </div>
     </section>-->
-    <app-home-page-component [hidden]="true"></app-home-page-component>
+    <app-home-page-component [hidden]="homepgVisibility"></app-home-page-component>
     <!-- SKILLS PAGE  -->
-    <app-skills-component [hidden]="false"></app-skills-component>
+    <app-skills-component [hidden]="skillspgVisibility"></app-skills-component>
+    <!-- EDUCATION AND EXPERIENCE PAGE -->
+    <app-ed-exp-component [hidden]="educationAndExpPageVisibility"></app-ed-exp-component>
+    <!-- ABOUT PAGE -->
+    <app-about-page-component [hidden]="aboutPageVisibility"></app-about-page-component>
     <!-- footer component -->
-    <app-footer-component [hidden]="false"></app-footer-component>
+    <div [hidden]="isHomeActive">
+      <app-footer-component [isEduAndExpPageActive]="educationAndExpPageVisibility" [isAboutPageActive]="aboutPageVisibility" [isSkillsPageActive]="skillspgVisibility" [hidden]="false"></app-footer-component>
+    </div>
 </div>
 
 

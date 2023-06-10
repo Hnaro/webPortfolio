@@ -10,6 +10,56 @@ export class AppComponent {
   isVisible:boolean | undefined;
   messageFromParent:string="";
 
+  homepgVisibility: boolean = false;
+  skillspgVisibility: boolean = true;
+  educationAndExpPageVisibility: boolean = true;
+  aboutPageVisibility: boolean = true;
+
+  isHomeActive: boolean = true;
+
+  showHome(e:any) {
+    // opens make the visibility for home to false
+    console.log("test show home");
+    //this.homepgVisibility = e;
+
+    if (!e.showHome) {
+      this.isHomeActive = true;
+    }else {
+      this.isHomeActive = false;
+    }
+
+    if (!e.showHome) {
+      this.homepgVisibility = e.showHome;
+      this.aboutPageVisibility = true;
+      this.skillspgVisibility = true;
+      this.educationAndExpPageVisibility = true;
+    }  
+    
+    if (!e.showEduAndExp) {
+      this.homepgVisibility = true;
+      this.aboutPageVisibility = true;
+      this.skillspgVisibility = true;
+      this.educationAndExpPageVisibility = e.showEduAndExp;
+      this.isHomeActive = false;
+    }  
+    
+    if (!e.showSkills){
+      this.homepgVisibility = true;
+      this.aboutPageVisibility = true;
+      this.skillspgVisibility = e.showSkills;
+      this.educationAndExpPageVisibility = true;
+      this.isHomeActive = false;
+    } 
+    
+    if (!e.showAbout){
+      this.homepgVisibility = true;
+      this.aboutPageVisibility = e.showAbout;
+      this.skillspgVisibility = true;
+      this.educationAndExpPageVisibility = true;
+      this.isHomeActive = false;
+    } 
+  }
+
   recieveUpdatedData(e:any) {
     this.isVisible = e;
     console.log("receieve from child");

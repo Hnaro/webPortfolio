@@ -1,9 +1,8 @@
 #skills-comp-cont {
     font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-    font-size: 1.5em;
     color:white;
     width: 100%;
-    margin-top: -3em;
+    margin-top: -3.5em;
     padding-top: 5em;
     padding-bottom: 3em;
     text-align: center;
@@ -16,6 +15,7 @@
 
 #skills-box-container {
     width: 100%;
+    font-size: 1.5em;
 }
 
 .skill-box-row {

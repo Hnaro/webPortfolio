@@ -1,0 +1,98 @@
+#educationExp-page-container {
+    background-color: #242424;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    color:white;
+    width: 100%;
+    margin-top: -3.5em;
+    padding-top: 5em;
+    padding-bottom: 3em;
+    text-align: center;
+}
+
+#main-title-h1 {
+    margin-bottom:2em;
+}
+
+#header-span-cont {
+    color: #c7984b;
+}
+
+.header-section-container {
+    margin-bottom: -1.5em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+#space-block {
+    margin: 4em 0em 1em 0em;
+    height: 5em;
+    background-color: #131313;
+}
+
+.intern-info-cont {
+    font-size: 1.2em;
+    margin-top: 1.2em;
+}
+
+.info-container {
+    font-weight: 650;
+    text-align: justify;
+    padding-top:1em;
+    padding-bottom:1em;
+    font-size: 1.2em;
+    padding-right: 1em;
+    background-color: #c7984b;
+}
+
+.info-container li {
+    margin-top: 1em;
+}
+
+.main-content-container {
+    width: 100% auto;
+    margin-top: -3em;
+}
+
+.content-header-container h1 {
+    margin-left: 0.5em;
+    border-left: 0.1em solid #c7984b;
+}
+
+.highlight-color {
+    font-size: 2em;
+    font-weight:900;
+    color: #c7984b;
+}
+
+.content-header-container {
+    margin-top: 5em;
+    display: flex;
+}
+
+.content-header-container h1 {
+    width: 60%;
+}
+
+.edu-container { 
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    width: 90%;
+    font-size: 0.8em;
+    height: 4em;
+    text-align: center;
+    background-color: #c7984b;
+}
+
+.edu-year-cont {
+    margin-left: 1.38em;
+    margin-bottom: -0.4em;
+    text-align: left;
+    color: #c7984b;
+}
+
+.sml-sz {
+    font-size: 0.7em;
+}

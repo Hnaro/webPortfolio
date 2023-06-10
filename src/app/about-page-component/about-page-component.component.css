@@ -1,0 +1,10 @@
+#aboutpg-container {
+    background-color: #2d293b;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    color:white;
+    width: 100%;
+    margin-top: -3.5em;
+    padding-top: 5em;
+    padding-bottom: 3em;
+    text-align: center;
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-skill-box-component',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./skill-box-component.component.css']
 })
 export class SkillBoxComponentComponent {
-
+  imageSrc: string = "";
+  @Input() skillName: string = "";
 }

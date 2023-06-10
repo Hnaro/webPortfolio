@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./skills-component.component.css']
 })
 export class SkillsComponentComponent {
-
+  skillLists = [["ExpressJs", "NodeJs"], ["Angular", "Javascript"],
+                ["MongoDB", "AWS"], ["Photoshop", "HTML"], ["CSS", "C#"], 
+                ["JQuery", "GitHub"], ["Typescript", "Java"]];
 }

@@ -1,15 +1,41 @@
-/* footer design */
-#footer-container {
+ /* footer design */
+.aboutpg-footer-bg-style {
     position: absolute;
     width: 100%;
     color: white;
     font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
     height: 24em;
     margin-top: -0.5em;
-    background-color: #41329d;
     text-align: center;
-  }
-  #footer-container header {
+    background-color: #1c1a25;
+}
+
+
+.skillpg-footer-bg-style {
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    height: 24em;
+    margin-top: -0.5em;
+    text-align: center;
+    /* about page bg-color*/
+    background-color: #41329d;
+}
+
+.eduAndExppg-footer-bg-style {
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    height: 24em;
+    margin-top: -0.5em;
+    text-align: center;
+    /* education&experience-page bg-color*/
+    background-color: #131313;
+}
+
+#footer-container header {
     text-align: center;
     margin: 0.2em;
     padding: 0.7em;
@@ -17,29 +43,46 @@
     font-weight: 900;
     color:white;
   }
-  
+
+  #footer-container input {
+    height: 2.3em;
+    margin-bottom: 1em;
+    border-radius: 0.7em;
+  }
+
   #footer-container input::placeholder {
     color: #1a1440;
+    text-align: center;
+    font-size: 1em;
     font-weight: 900;
-    font-size: 1.1em;
+    opacity: 0.9;
+    border: 0px;
+}
+  
+  #footer-container .txtarea-style::placeholder {
+    color: #1a1440;
+    font-weight: 900;
+    font-size: 1em;
     padding: 1em;
-    transform: translateY(-60px);
+    text-align: left;
+    transform: translateY(-45px);
     opacity: 0.9;
   }
   
-  #footer-container input[type=text]{
+  #footer-container .txtarea-style[type=text]{
     color: #1a1440;
     font-weight: 900;
     padding: 0.5em;
     opacity: 0.9;
     border: 0px solid none;
     padding-left: 1em;
+    text-align: left;
   }
   
-  #footer-container input {
+  #footer-container .txtarea-style {
     margin: 0 auto;
-    height: 15em;
-    width: 80%;
+    height: 12em;
+    width: 70%;
     border-radius: 1.2em;
     border: 0px;
   }
@@ -59,4 +102,10 @@
     margin-top: 1em;
     font-size: 0.9em;
     font-weight: 900;
+    padding-left: 2.46em;
+    padding-right: 2.46em;
+  }
+
+  #email-style {
+    height: 0.5em;
   }

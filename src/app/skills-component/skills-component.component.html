@@ -1,33 +1,9 @@
 <div id="skills-comp-cont">
     <h1>Skills & <span>Abilities</span></h1>
-    <div id="skills-box-container">
+    <div *ngFor="let skills of skillLists" id="skills-box-container">
         <div class="skill-box-row">
-            <app-skill-box-component></app-skill-box-component>
-            <app-skill-box-component></app-skill-box-component>
-        </div>
-        <div class="skill-box-row">
-            <app-skill-box-component></app-skill-box-component>
-            <app-skill-box-component></app-skill-box-component>
-        </div>
-        <div class="skill-box-row">
-            <app-skill-box-component></app-skill-box-component>
-            <app-skill-box-component></app-skill-box-component>
-        </div>
-        <div class="skill-box-row">
-            <app-skill-box-component></app-skill-box-component>
-            <app-skill-box-component></app-skill-box-component>
-        </div>
-        <div class="skill-box-row">
-            <app-skill-box-component></app-skill-box-component>
-            <app-skill-box-component></app-skill-box-component>
-        </div>
-        <div class="skill-box-row">
-            <app-skill-box-component></app-skill-box-component>
-            <app-skill-box-component></app-skill-box-component>
-        </div>
-        <div class="skill-box-row">
-            <app-skill-box-component></app-skill-box-component>
-            <app-skill-box-component></app-skill-box-component>
+            <app-skill-box-component [skillName]="skills[0]"></app-skill-box-component>
+            <app-skill-box-component [skillName]="skills[1]"></app-skill-box-component>
         </div>
     </div>
 </div>

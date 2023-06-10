@@ -4,15 +4,14 @@
       <img src="../../assets/img/Hnaro-logo.png" alt="" srcset="">
     </div>
     <div id="side-bar-close-cont">
-      <button (click)="close()">X</button>
     </div>
   </div>
   <div id="slider-bar-link-cont">
     <ul>
-      <li><button>Home</button></li>
-      <li><button>Skills</button></li>
-      <li><button>Education & Experiences</button></li>
-      <li><button>About</button></li>
+      <li><button (click)="showHomePage()">Home</button></li>
+      <li><button (click)="showSkillsPage()">Skills</button></li>
+      <li><button (click)="showEduAndExpPage()">Education & Experiences</button></li>
+      <li><button (click)="showAboutPage()">About</button></li>
     </ul>
   </div>
   <div id="slider-bar-footer"></div>

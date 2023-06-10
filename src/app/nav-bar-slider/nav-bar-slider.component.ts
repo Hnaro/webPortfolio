@@ -10,6 +10,7 @@ export class NavBarSliderComponent implements OnInit, OnChanges  {
   @Input() visibility:boolean | undefined;
 
   @Output() updateDataToParent = new EventEmitter();
+  @Output() updateHomeVisibility = new EventEmitter();
 
   ngOnChanges(changes: SimpleChanges): void {
     //console.log("current value: "+changes["msgFromParent"].currentValue);
@@ -26,14 +27,24 @@ export class NavBarSliderComponent implements OnInit, OnChanges  {
     }
   }
 
-  close() {
-    this.visibility = true;
-    this.msgFromParent = "";
-    // after clicking this close should update back the data to the main page
+  showHomePage() {
+    this.updateDataToParent.emit(true);
+    this.updateHomeVisibility.emit({ showHome: false, showSkills: true, showEduAndExp: true, showAbout: true});
+  }
+
+  showSkillsPage() {
+    this.updateHomeVisibility.emit({ showHome: true, showSkills: false, showEduAndExp: true, showAbout: true});
     this.updateDataToParent.emit(true);
   }
-  
-  constructor() {
+
+  showEduAndExpPage() {
+    this.updateDataToParent.emit(true);
+    this.updateHomeVisibility.emit({ showHome: true, showSkills: true, showEduAndExp: false, showAbout: true});
+  }
+
+  showAboutPage() {
+    this.updateDataToParent.emit(true);
+    this.updateHomeVisibility.emit({ showHome: true, showSkills: true, showEduAndExp: true, showAbout: false});
   }
 
   ngOnInit(): void {

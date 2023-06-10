@@ -9,6 +9,8 @@ import { SkillBoxComponentComponent } from './skill-box-component/skill-box-comp
 import { NavbarComponentComponent } from './navbar-component/navbar-component.component';
 import { FooterComponentComponent } from './footer-component/footer-component.component';
 import { HomePageComponentComponent } from './home-page-component/home-page-component.component';
+import { EdExpComponentComponent } from './ed-exp-component/ed-exp-component.component';
+import { AboutPageComponentComponent } from './about-page-component/about-page-component.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { HomePageComponentComponent } from './home-page-component/home-page-comp
     SkillBoxComponentComponent,
     NavbarComponentComponent,
     FooterComponentComponent,
-    HomePageComponentComponent
+    HomePageComponentComponent,
+    EdExpComponentComponent,
+    AboutPageComponentComponent
   ],
   imports: [
     BrowserModule,
