@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class SkillsComponentComponent {
   skillLists = [["ExpressJs", "NodeJs"], ["Angular", "Javascript"],
                 ["MongoDB", "AWS"], ["Photoshop", "HTML"], ["CSS", "C#"], 
-                ["JQuery", "GitHub"], ["Typescript", "Java"]];
+                ["JQuery", "GitHub"], ["Typescript", "Java"], ["Git",""]];
 }

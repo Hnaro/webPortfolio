@@ -9,6 +9,11 @@ export class NavBarSliderComponent implements OnInit, OnChanges  {
   @Input() msgFromParent:string = ""; 
   @Input() visibility:boolean | undefined;
 
+  isHomeActive: boolean = true;
+  isSkillsActive: boolean = false;
+  isEduAndExpActive: boolean = false;
+  isAboutActive: boolean = false;
+
   @Output() updateDataToParent = new EventEmitter();
   @Output() updateHomeVisibility = new EventEmitter();
 
@@ -30,21 +35,37 @@ export class NavBarSliderComponent implements OnInit, OnChanges  {
   showHomePage() {
     this.updateDataToParent.emit(true);
     this.updateHomeVisibility.emit({ showHome: false, showSkills: true, showEduAndExp: true, showAbout: true});
+    this.isHomeActive = true;
+    this.isSkillsActive = false;
+    this.isEduAndExpActive = false
+    this.isAboutActive = false;
   }
 
   showSkillsPage() {
     this.updateHomeVisibility.emit({ showHome: true, showSkills: false, showEduAndExp: true, showAbout: true});
     this.updateDataToParent.emit(true);
+    this.isHomeActive = false;
+    this.isSkillsActive = true;
+    this.isEduAndExpActive = false;
+    this.isAboutActive = false;
   }
 
   showEduAndExpPage() {
     this.updateDataToParent.emit(true);
     this.updateHomeVisibility.emit({ showHome: true, showSkills: true, showEduAndExp: false, showAbout: true});
+    this.isHomeActive = false;
+    this.isSkillsActive = false;
+    this.isEduAndExpActive = true;
+    this.isAboutActive = false;
   }
 
   showAboutPage() {
     this.updateDataToParent.emit(true);
     this.updateHomeVisibility.emit({ showHome: true, showSkills: true, showEduAndExp: true, showAbout: false});
+    this.isHomeActive = false;
+    this.isSkillsActive = false;
+    this.isEduAndExpActive = false;
+    this.isAboutActive = true;
   }
 
   ngOnInit(): void {

@@ -38,7 +38,10 @@
 #footer-container header {
     text-align: center;
     margin: 0.2em;
-    padding: 0.7em;
+    padding-right: 1.9em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    padding-left: 1.9em;
     font-size: 1em;
     font-weight: 900;
     color:white;
@@ -46,6 +49,7 @@
 
   #footer-container input {
     height: 2.3em;
+    width: 25em;
     margin-bottom: 1em;
     border-radius: 0.7em;
   }

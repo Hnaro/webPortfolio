@@ -1,4 +1,4 @@
-<div [hidden]="visibility" id="nav-bar-slider-container">
+<div [class.about-style]="isAboutActive" [class.eduAndExp-style]="isEduAndExpActive" [class.skills-style]="isSkillsActive" [hidden]="visibility" [class.nav-bar-slider-container]="isHomeActive">
   <div id="slider-bar-head-cont">
     <div id="side-bar-logo-cont">
       <img src="../../assets/img/Hnaro-logo.png" alt="" srcset="">
@@ -8,11 +8,10 @@
   </div>
   <div id="slider-bar-link-cont">
     <ul>
-      <li><button (click)="showHomePage()">Home</button></li>
-      <li><button (click)="showSkillsPage()">Skills</button></li>
-      <li><button (click)="showEduAndExpPage()">Education & Experiences</button></li>
-      <li><button (click)="showAboutPage()">About</button></li>
+      <li [class.isHomeActive]="isHomeActive" ><button (click)="showHomePage()">Home</button></li>
+      <li [class.isSkillsActive]="isSkillsActive"><button (click)="showSkillsPage()">Skills</button></li>
+      <li [class.isEduAndExpActive]="isEduAndExpActive"><button (click)="showEduAndExpPage()">Education & Experiences</button></li>
+      <li [class.isAboutActive]="isAboutActive"><button (click)="showAboutPage()">About</button></li>
     </ul>
   </div>
-  <div id="slider-bar-footer"></div>
 </div>
