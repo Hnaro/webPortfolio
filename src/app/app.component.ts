@@ -10,8 +10,8 @@ export class AppComponent {
   isVisible:boolean | undefined;
   messageFromParent:string="";
 
-  homepgVisibility: boolean = false;
-  skillspgVisibility: boolean = true;
+  homepgVisibility: boolean = true;
+  skillspgVisibility: boolean = false;
   educationAndExpPageVisibility: boolean = true;
   aboutPageVisibility: boolean = true;
 
@@ -33,31 +33,31 @@ export class AppComponent {
       this.aboutPageVisibility = true;
       this.skillspgVisibility = true;
       this.educationAndExpPageVisibility = true;
-    }  
-    
+    }
+
     if (!e.showEduAndExp) {
       this.homepgVisibility = true;
       this.aboutPageVisibility = true;
       this.skillspgVisibility = true;
       this.educationAndExpPageVisibility = e.showEduAndExp;
       this.isHomeActive = false;
-    }  
-    
+    }
+
     if (!e.showSkills){
       this.homepgVisibility = true;
       this.aboutPageVisibility = true;
       this.skillspgVisibility = e.showSkills;
       this.educationAndExpPageVisibility = true;
       this.isHomeActive = false;
-    } 
-    
+    }
+
     if (!e.showAbout){
       this.homepgVisibility = true;
       this.aboutPageVisibility = e.showAbout;
       this.skillspgVisibility = true;
       this.educationAndExpPageVisibility = true;
       this.isHomeActive = false;
-    } 
+    }
   }
 
   recieveUpdatedData(e:any) {

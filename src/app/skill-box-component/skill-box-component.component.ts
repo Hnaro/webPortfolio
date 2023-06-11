@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./skill-box-component.component.css']
 })
 export class SkillBoxComponentComponent {
-  imageSrc: string = "";
+  @Input() imageSrc: any;
   @Input() skillName: string = "";
 }

@@ -1,9 +1,31 @@
 <div id="skills-comp-cont">
     <h1>Skills & <span>Abilities</span></h1>
-    <div *ngFor="let skills of skillLists" id="skills-box-container">
+    <!-- content for mobile -->
+    <div id="mobile-view">
+      <div *ngFor="let skills of skillLists" id="skills-box-container">
         <div class="skill-box-row">
-            <app-skill-box-component [skillName]="skills[0]"></app-skill-box-component>
-            <app-skill-box-component [skillName]="skills[1]"></app-skill-box-component>
+            <app-skill-box-component [imageSrc]="skills[0].path" [skillName]="skills[0].name"></app-skill-box-component>
+            <app-skill-box-component [imageSrc]="skills[1].path" [skillName]="skills[1].name"></app-skill-box-component>
         </div>
+      </div>
+    </div>
+
+    <!-- tablet view -->
+    <div id="tablet-view">
+      <div id="skills-box-container">
+        <div *ngFor="let skills of skillListTablet" class="skill-box-row">
+            <app-skill-box-component [imageSrc]="skills[0].path" [skillName]="skills[0].name"></app-skill-box-component>
+            <app-skill-box-component [imageSrc]="skills[1].path" [skillName]="skills[1].name"></app-skill-box-component>
+            <app-skill-box-component [imageSrc]="skills[2].path" [skillName]="skills[2].name"></app-skill-box-component>
+            <app-skill-box-component [imageSrc]="skills[3].path" [skillName]="skills[3].name"></app-skill-box-component>
+        </div>
+      </div>
+    </div>
+
+<!-- desktop view  -->
+    <div id="desktop-view">
+      <div id="skills-box-container">
+            <app-skill-box-component *ngFor="let skills of skillListDesktop" [imageSrc]="skills.path" [skillName]="skills.name"></app-skill-box-component>
+      </div>
     </div>
 </div>

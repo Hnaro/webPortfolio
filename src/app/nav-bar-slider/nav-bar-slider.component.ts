@@ -6,7 +6,7 @@ import { Component, Input, Output, SimpleChanges, OnInit, OnChanges, EventEmitte
   styleUrls: ['./nav-bar-slider.component.css']
 })
 export class NavBarSliderComponent implements OnInit, OnChanges  {
-  @Input() msgFromParent:string = ""; 
+  @Input() msgFromParent:string = "";
   @Input() visibility:boolean | undefined;
 
   isHomeActive: boolean = true;
@@ -66,6 +66,10 @@ export class NavBarSliderComponent implements OnInit, OnChanges  {
     this.isSkillsActive = false;
     this.isEduAndExpActive = false;
     this.isAboutActive = true;
+  }
+
+  close() {
+    this.updateDataToParent.emit(true);
   }
 
   ngOnInit(): void {

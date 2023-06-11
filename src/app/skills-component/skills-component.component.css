@@ -1,27 +1,116 @@
 #skills-comp-cont {
-    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-    color:white;
-    width: 100%;
-    margin-top: -3.5em;
-    padding-top: 5em;
-    padding-bottom: 3em;
-    text-align: center;
-    background: linear-gradient(#5d2e9c 0.5%, #5843d6 30%);
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  color:white;
+  width: 100%;
+  margin-top: -3.5em;
+  padding-top: 5em;
+  padding-bottom: 3em;
+  background: linear-gradient(#5d2e9c 0.5%, #5843d6 30%);
+}
+
+#mobile-view {
+  display:none;
+}
+
+#tablet-view {
+  display: none;
+}
+
+#desktop-view {
+  margin: 0.5em;
+  border-radius: 0.5em;
+  margin: 0 auto;
+  width: 90%;
+  background-color: #2b1c5b;;
+  height: 40em;
+  padding: 2em;
+}
+
+#skills-comp-cont h1 {
+  font-size: 3em;
+  text-align: center;
 }
 
 #skills-comp-cont span{
-    color:#f6ee06;
-}
-
-#skills-box-container {
-    width: 100%;
-    font-size: 1.5em;
+  color:#f6ee06;
 }
 
 .skill-box-row {
+  display: flex;
+  justify-content: center;
+}
+#skills-box-container {
+  text-align: center;
+  font-size: 1.7em;
+}
+
+
+@media screen and (max-width: 1200px) {
+  #mobile-view {
+    display:none;
+  }
+  #desktop-view {
+    display: none;
+  }
+
+  #tablet-view {
+    display: block;
+    border-radius: 0.5em;
+    padding-left: 2em;
+    margin: 0 auto;
+    width: 90%;
+    background-color: #2b1c5b;;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+  }
+
+  #skills-comp-cont h1 {
+    font-size: 3em;
+  }
+
+  #skills-comp-cont span{
+    color:#f6ee06;
+  }
+
+  .skill-box-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #skills-box-container {
+    font-size: 1.3em;
+  }
+}
+
+/* mobile view*/
+@media screen and (max-width: 770px) {
+  #tablet-view {
+    display: none;
+  }
+  #desktop-view {
+    display: none;
+  }
+  #mobile-view {
+    display:block;
+  }
+
+  #skills-comp-cont span{
+    color:#f6ee06;
+  }
+
+  #skills-box-container {
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+  .skill-box-row {
     justify-content: center;
     width: 100%;
     display: flex;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+  }
 }
+
+/* desktop view */
