@@ -1,11 +1,24 @@
 <div id="nav-bar-container">
-    <div id="container-img">
+    <div id="mobile-view">
+      <div id="container-img">
         <img [hidden]="isSkillsActive"  (click)="sidebar()" id="hamburgIcon" src="../../assets/img/hamburgIcon.png" alt="" srcset="">
-      <img [hidden]="isHomeActive"  (click)="sidebar()" id="hamburgIcon" src="../../assets/img/hamburgIcon.png" alt="" srcset="">
-      <img [hidden]="isEduAndexpActive" (click)="sidebar()" id="hamburgIcon" src="../../assets/img/skills page icons/hamburger_2.png" alt="" srcset="">
-      <img [hidden]="isAboutpgActive" (click)="sidebar()" id="hamburgIcon" src="../../assets/img/hamburgIcon_3.png" alt="" srcset="">
+        <img [hidden]="isHomeActive"  (click)="sidebar()" id="hamburgIcon" src="../../assets/img/hamburgIcon.png" alt="" srcset="">
+        <img [hidden]="isEduAndexpActive" (click)="sidebar()" id="hamburgIcon" src="../../assets/img/skills page icons/hamburger_2.png" alt="" srcset="">
+        <img [hidden]="isAboutpgActive" (click)="sidebar()" id="hamburgIcon" src="../../assets/img/hamburgIcon_3.png" alt="" srcset="">
+      </div>
+      <div id="container-img-2">
+        <img id="logo" src="../../assets/img/Hnaro-logo.png" alt="" srcset="">
+      </div>
     </div>
-    <div id="container-img-2">
-      <img id="logo" src="../../assets/img/Hnaro-logo.png" alt="" srcset="">
+    <div id="desktop-view">
+      <div id="container-img-2">
+        <img id="logo" src="../../assets/img/Hnaro-logo.png" alt="" srcset="">
+      </div>
+      <div id="navbar-btn-container">
+        <button>Home</button>
+        <button>Skills</button>
+        <button>Education & Experience</button>
+        <button>About</button>
+      </div>
     </div>
   </div>

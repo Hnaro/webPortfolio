@@ -10,8 +10,8 @@ export class AppComponent {
   isVisible:boolean | undefined;
   messageFromParent:string="";
 
-  homepgVisibility: boolean = true;
-  skillspgVisibility: boolean = false;
+  homepgVisibility: boolean = false;
+  skillspgVisibility: boolean = true;
   educationAndExpPageVisibility: boolean = true;
   aboutPageVisibility: boolean = true;
 

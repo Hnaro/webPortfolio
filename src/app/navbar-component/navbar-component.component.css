@@ -1,4 +1,5 @@
 /*mobile design*/
+/*base container*/
 #nav-bar-container {
     position: absolute;
     display: flex;
@@ -7,15 +8,20 @@
     background:transparent;
     justify-content: center;
     z-index: 50000;
-  }
+}
+
+#mobile-view {
+  width: 100%;
+  display: flex;
+}
   
-  /* image container */
-  #container-img {
-    width: 50%;
-  }
-  #container-img-2 {
-    width: 50%;
-  }
+/* image container */
+#mobile-view #container-img {
+  width: 100%;
+}
+#mobile-view #container-img-2 {
+  width: 100%;
+}
 
   /* image style */
 #container-img #hamburgIcon{
@@ -30,3 +36,55 @@
   height: 40px;
   padding: 1.2em;
 }
+
+/* screen visibilit view */
+#desktop-view {
+  display: none;
+}
+
+/* tablet view */
+@media screen and (min-width: 550px){
+  #mobile-view {
+    display: flex;
+  }
+  #tablet-view {
+    display: none;
+  }
+}
+
+/* desktop view */
+@media screen and (min-width: 1200px) {
+  #mobile-view {
+    display: none;
+  }
+  #desktop-view {
+    width: 100%;
+    display:flex;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+  }
+  #desktop-view #container-img-2 {
+    padding: 0.5em;
+    margin-left: 5em;
+  }
+  #desktop-view #container-img-2 img {
+    width: 150px;
+    height: 50px;
+  }
+  #navbar-btn-container {
+    text-align: right;
+    width: 100%;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 7em;
+  }
+  #navbar-btn-container button {
+    border: 0px;
+    background: transparent;
+    font-size: 1.4em;
+    margin: 1.5em;
+    font-weight: 600;
+  }
+}
+
