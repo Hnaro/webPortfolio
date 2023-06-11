@@ -4,13 +4,14 @@
   display: flex;
   width: 100%;
   top: 0px;
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
   background:transparent;
   justify-content: center;
   z-index: 50000;
 }
 
 /* image container */
-#container-img {
+#container-img {  
   width: 50%;
 }
 #container-img-2 {
@@ -47,7 +48,6 @@
 
 #welcome-page-container h1 {
   color: #5843d6;
-  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
   font-size: 3em;
   font-weight: 600;
 }
