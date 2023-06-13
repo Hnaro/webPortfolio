@@ -1,21 +1,12 @@
 <div id="outer-container">
   <div class="main-container" id="slider-bar-container">
+    <!-- navigation bar links -->
     <app-nav-bar-slider [visibility]="isVisible" (updateHomeVisibility)="showHome($event)" (updateDataToParent)="recieveUpdatedData($event)"></app-nav-bar-slider>
-   <!--<div id="nav-bar-container">
-      <div id="container-img">
-        <img (click)="sideBar()" id="hamburgIcon" src="../assets/img/hamburgIcon.png" alt="" srcset="">
-      </div>
-      <div id="container-img-2">
-        <img id="logo" src="../assets/img/Hnaro-logo.png" alt="" srcset="">
-      </div>
-    </div> -->
+    <!-- navigation bar header -->
     <app-navbar-component (updateVisibility)="showHome($event)" [isEduAndexpActive]="educationAndExpPageVisibility" [isAboutpgActive]="aboutPageVisibility" [isSkillsActive]="skillspgVisibility" [isHomeActive]="homepgVisibility" (isVisible)="handlevisibility($event)"></app-navbar-component>
   </div>
-
-    <!-- if other page is open this is hidden -->
-
     <!-- HOME PAGE -->
-    <app-home-page-component [hidden]="homepgVisibility"></app-home-page-component>
+    <app-home-page-component (updateVisibility)="showHome($event)" [hidden]="homepgVisibility"></app-home-page-component>
     <!-- SKILLS PAGE  -->
     <app-skills-component [hidden]="skillspgVisibility"></app-skills-component>
     <!-- EDUCATION AND EXPERIENCE PAGE -->
