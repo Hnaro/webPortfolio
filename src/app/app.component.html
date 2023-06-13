@@ -9,7 +9,7 @@
         <img id="logo" src="../assets/img/Hnaro-logo.png" alt="" srcset="">
       </div>
     </div> -->
-    <app-navbar-component [isEduAndexpActive]="educationAndExpPageVisibility" [isAboutpgActive]="aboutPageVisibility" [isSkillsActive]="skillspgVisibility" [isHomeActive]="homepgVisibility" (isVisible)="handlevisibility($event)"></app-navbar-component>
+    <app-navbar-component (isVisible)="showHome($event)" [isEduAndexpActive]="educationAndExpPageVisibility" [isAboutpgActive]="aboutPageVisibility" [isSkillsActive]="skillspgVisibility" [isHomeActive]="homepgVisibility" (isVisible)="handlevisibility($event)"></app-navbar-component>
   </div>
 
     <!-- if other page is open this is hidden -->

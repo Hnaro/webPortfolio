@@ -10,18 +10,6 @@
       </div>
     </div>
 
-    <!-- tablet view -->
-    <div id="tablet-view">
-      <div id="skills-box-container">
-        <div *ngFor="let skills of skillListTablet" class="skill-box-row">
-            <app-skill-box-component [imageSrc]="skills[0].path" [skillName]="skills[0].name"></app-skill-box-component>
-            <app-skill-box-component [imageSrc]="skills[1].path" [skillName]="skills[1].name"></app-skill-box-component>
-            <app-skill-box-component [imageSrc]="skills[2].path" [skillName]="skills[2].name"></app-skill-box-component>
-            <app-skill-box-component [imageSrc]="skills[3].path" [skillName]="skills[3].name"></app-skill-box-component>
-        </div>
-      </div>
-    </div>
-
 <!-- desktop view  -->
     <div id="desktop-view">
       <div id="skills-box-container">

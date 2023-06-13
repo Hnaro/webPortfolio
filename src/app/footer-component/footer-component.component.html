@@ -1,12 +1,12 @@
 <div id="footer-container" [class.eduAndExppg-footer-bg-style]="eduAndExpBgColorisActive" [class.skillpg-footer-bg-style]="skillsPageBgColorActive" [class.aboutpg-footer-bg-style]="aboutPageBgColorActive">
     <!-- education and exp page footer content -->
-    <div [hidden]="isEduAndExpPageActive">
+    <div id="educationpage-footer-style-container" [hidden]="isEduAndExpPageActive">
         <header>Anything you'd like to suggest to improve my website</header>
         <input class="txtarea-style" type="text" placeholder="Any Suggestions?">
     </div>
 
     <!-- skills page footer content -->
-    <div [hidden]="isSkillsPageActive">
+    <div id="skillspage-style-container" [hidden]="isSkillsPageActive">
         <header>Did you find the skills you're looking for? </header>
         <input class="txtarea-style" type="text" placeholder="Send message to the developer...">
     </div>

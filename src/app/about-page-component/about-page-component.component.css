@@ -152,7 +152,14 @@ ul li {
 }
 
 @media screen and (min-width: 570px) {
-
+    #aboutpg-container {
+        padding-top: 8em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    #contact-container #contact-subheader-container .desktop-view {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 1650px) {

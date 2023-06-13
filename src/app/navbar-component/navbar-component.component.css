@@ -50,6 +50,15 @@
   #tablet-view {
     display: none;
   }
+  .isHomeActive {
+    background-color: #ec3878;
+    text-decoration: underline;
+    color: #ec3878;
+  }
+
+  .isHomeActive span {
+    font-weight: 900;
+  }
 }
 
 /* desktop view */
@@ -96,15 +105,6 @@
   }
   #aboutBtn-style {
     padding-left: 7em;
-  }
-  .isHomeActive {
-    background-color: #ec3878;
-    text-decoration: underline;
-    color: #ec3878;
-  }
-
-  .isHomeActive span {
-    font-weight: 900;
   }
 }
 

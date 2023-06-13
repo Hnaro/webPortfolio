@@ -17,10 +17,10 @@
         <img id="logo" src="../../assets/img/Hnaro-logo.png" alt="" srcset="">
       </div>
       <div id="navbar-btn-container">
-        <button><span>Home</span></button>
-        <button>Skills</button>
-        <button>Education & Experience</button>
-        <button [class.isHomeActive]="activeHome" id="aboutBtn-style">About</button>
+        <button (click)="homePgBtn()" [class.isHomeActive]="homeIsActive"><span>Home</span></button>
+        <button (click)="skillsPgBtn()" [class.isHomeActive]="skillsIsActive">Skills</button>
+        <button (click)="eduAndExpPgBtn()" [class.isHomeActive]="eduAndExpIsActive">Education & Experience</button>
+        <button (click)="aboutPgBtn()" [class.isHomeActive]="aboutIsActive" id="aboutBtn-style">About</button>
       </div>
     </div>
   </div>

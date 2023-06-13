@@ -49,7 +49,7 @@
 
   #footer-container input {
     height: 2.3em;
-    width: 25em;
+    width: 40% auto;
     margin-bottom: 1em;
     border-radius: 0.7em;
   }
@@ -115,7 +115,28 @@
   }
 
   @media screen and (min-width: 570px) {
-
+    #aboutpage-style-container header{
+      font-size: 1.2em;
+    }
+    
+    #aboutpage-style-container #email-style {
+      display: block;
+      width: 20%;
+      height: 1.5em;
+      margin: 0 auto;
+      margin-bottom: 1em;
+    }
+    #aboutpage-style-container #email-style[type="text"]{
+      font-size: 0.9em;
+      padding: 0.2em;
+    }
+    #aboutpage-style-container .txtarea-style {
+      width: 50%;
+      height:7em;
+    }
+    #aboutpage-style-container .txtarea-style[type=text] {
+      font-size: 1em;
+    }
   }
   @media screen and (min-width: 1650px) {
      /* footer design */
@@ -124,17 +145,9 @@
   margin-top: -0.5em;
 }
 
-
 .skillpg-footer-bg-style {
-  position: absolute;
-  width: 100%;
-  color: white;
-  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
   height: 40em;
   margin-top: -0.5em;
-  text-align: center;
-  /* about page bg-color*/
-  background-color: #41329d;
 }
 
 .eduAndExppg-footer-bg-style {
@@ -165,11 +178,29 @@
   font-size: 1.1em;
 }
 
-#footer-container p {
+#skillspage-style-container header, #educationpage-footer-style-container header {
+  margin-top: 0.5em;
+  font-size: 1.5em;
+}
+
+#skillspage-style-container .txtarea-style, #educationpage-footer-style-container .txtarea-style {
   margin-top: 2em;
+  width: 30%;
+  height: 20em;
+}
+#skillspage-style-container .txtarea-style[type=text], #educationpage-footer-style-container .txtarea-style[type=text] {
+  font-size: 1em;
+}
+#skillspage-style-container .txtarea-style::placeholder, #educationpage-footer-style-container .txtarea-style::placeholder {
+  transform: translateY(-120px);
+}
+
+#footer-container p {
+  margin-top: 2.5em;
   font-size: 1.2em;
 }
 #footer-container #copyright-container {
   font-size: 1em;
+  margin-top: 2.5em;
 }
   }

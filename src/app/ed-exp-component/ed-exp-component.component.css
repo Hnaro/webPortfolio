@@ -126,9 +126,106 @@
     font-size: 0.6em;
 }
 
+.job-title-container {
+    display: none;
+}
+
 /* small-large tablet view */
-@media screen and (min-width: 570px) {
-    
+@media screen and (min-width: 700px) {       
+    .mobile-view {
+        display: none;
+    }
+    #edu-exp-container {
+        justify-content: center;
+    }
+    #educationExp-page-container #main-title-h1 {
+        font-size: 2.5em;
+    }
+    #educationExp-page-container {
+        padding-top: 7em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    #education-section-container {
+        margin-right: 2em;
+        margin-left: 2em;
+        font-size: 1.1em;
+        width: 90% auto;
+    }
+    .edu-container {
+        margin: 0;
+        margin-bottom: -0.5em;
+        font-size: 0.9em;
+        height: 5em;
+    }
+    #experience-section-container {
+        margin-top: 7em;
+        margin-right: 2em;
+        margin-left: 2em;
+        display: block;
+        width: 90% auto;
+    }
+    .jobinfo-container {
+        margin-top: -1em;
+        display: inline-block;
+        width: 60%;
+        font-size: 1em;
+        border-right: 0.2em solid white;
+        transform: translateY(-10px);
+    }
+    .jobinfo-container h1 {
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 2.7em;
+    }
+    .job-title-container {
+        font-size: 2.4em;
+        display: inline-block;
+        width: 36%;
+        transform: translateY(-90px);
+        padding-left: 0.5em;
+    }
+
+    .header-section-container {
+        display: none;
+    }
+    .info-container {
+        background: transparent;
+    }
+    .education-container {
+        margin-top:2em;
+        font-size: 1em;
+    }
+    .content-header-container h1{
+        padding-left: -5em;
+        width:fit-content;
+        margin: 0.5em;
+    }
+    .content-header-container {
+        margin: 0em;
+    }
+    .main-content-container {
+        margin-top: 0.5em;
+    }
+    li {
+        list-style-type: none;
+    }
+    #intern-section-container h1 {
+        transform: translateY(-55px);
+        font-size: 4em;
+        color:#c7984b;
+    }
+    #intern-section-container {
+        background-color: #c7984b;
+    }
+    #intern-section-container #intern-info-main-container {
+        display: flex;
+    }
+    .intern-info-cont {
+        display: inline-block;
+        width: 45%;
+    }
+
 }
 
 /* desktop view*/
@@ -216,7 +313,7 @@
         list-style-type: none;
     }
     #intern-section-container h1 {
-        margin-top: -0.9em;
+        margin-top: 0.001em;
         font-size: 4em;
     }
     #intern-section-container {
