@@ -11,6 +11,7 @@ export class NavbarComponentComponent implements OnInit {
   @Input() isAboutpgActive: boolean | undefined;
   @Input() isSkillsActive: boolean | undefined;
   @Output() isVisible = new EventEmitter();
+  @Output() updateVisibility = new EventEmitter();
 
   homeIsActive: boolean | undefined;
   skillsIsActive: boolean | undefined;
@@ -37,19 +38,19 @@ export class NavbarComponentComponent implements OnInit {
   }
 
   homePgBtn() {
-    this.isVisible.emit({ showHome: false, showSkills: true, showEduAndExp: true, showAbout: true});
+    this.updateVisibility.emit({ showHome: false, showSkills: true, showEduAndExp: true, showAbout: true});
     this.checkVisibility(true, false, false ,false);
   }
   skillsPgBtn() {
-    this.isVisible.emit({ showHome: true, showSkills: false, showEduAndExp: true, showAbout: true});
+    this.updateVisibility.emit({ showHome: true, showSkills: false, showEduAndExp: true, showAbout: true});
     this.checkVisibility(false, true, false, false);
   }
   eduAndExpPgBtn() {
-    this.isVisible.emit({ showHome: true, showSkills: true, showEduAndExp: false, showAbout: true});
+    this.updateVisibility.emit({ showHome: true, showSkills: true, showEduAndExp: false, showAbout: true});
     this.checkVisibility(false, false, true, false);
   }
   aboutPgBtn() {
-    this.isVisible.emit({ showHome: true, showSkills: true, showEduAndExp: true, showAbout: false});
+    this.updateVisibility.emit({ showHome: true, showSkills: true, showEduAndExp: true, showAbout: false});
     this.checkVisibility(false, false , false, true);
   }
 }

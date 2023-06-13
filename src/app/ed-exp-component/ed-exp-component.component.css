@@ -237,6 +237,7 @@
         display: flex;
     }
     #edu-exp-container {
+        margin-top: -7em;
         display: flex;
         justify-content: center;
     }
@@ -320,9 +321,11 @@
         display: flex;
         background-color: #c7984b;
     }
+    #intern-info-main-container {
+        width: 90%;
+    }
     .intern-info-cont {
         width: 49%;
-        background: transparent;
     }
 
 }
