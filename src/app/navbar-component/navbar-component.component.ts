@@ -12,8 +12,11 @@ export class NavbarComponentComponent implements OnInit {
   @Input() isSkillsActive: boolean | undefined;
   @Output() isVisible = new EventEmitter();
 
+  activeHome: boolean | undefined;
+
   ngOnInit(): void {
     this.isHomeActive = false;
+    this.activeHome = !this.isHomeActive
   }
 
   sidebar(): void {

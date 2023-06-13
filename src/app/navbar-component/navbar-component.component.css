@@ -53,7 +53,12 @@
 }
 
 /* desktop view */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1250px) {
+  #nav-bar-container {
+    position: fixed;
+    background-color: white;
+    opacity: 0.9;
+  }
   #mobile-view {
     display: none;
   }
@@ -66,6 +71,7 @@
   #desktop-view #container-img-2 {
     padding: 0.5em;
     margin-left: 5em;
+    margin-top: 0.7em;
   }
   #desktop-view #container-img-2 img {
     width: 150px;
@@ -77,14 +83,28 @@
     padding-left: 0.5em;
     padding-top: 0.5em;
     padding-right: 0.5em;
-    margin-right: 7em;
+    margin-right: 5em;
   }
   #navbar-btn-container button {
     border: 0px;
     background: transparent;
     font-size: 1.4em;
-    margin: 1.5em;
+    margin-top: 1.3em;
+    margin-left: 1em;
+    margin-right: 1em;
     font-weight: 600;
+  }
+  #aboutBtn-style {
+    padding-left: 7em;
+  }
+  .isHomeActive {
+    background-color: #ec3878;
+    text-decoration: underline;
+    color: #ec3878;
+  }
+
+  .isHomeActive span {
+    font-weight: 900;
   }
 }
 

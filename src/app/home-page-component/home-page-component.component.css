@@ -42,3 +42,74 @@ h2 span {
 #pink-color {
     color: #ec3878;
 }
+
+#desktop-view {
+    display: none;
+}
+
+/* tablet view */
+@media screen and (min-width: 570px) {
+    #desktop-view {
+        display: none;
+    }
+    #mobile-view #welcome-page-container h1 {
+        font-size: 4em;
+        text-align: center;
+    }
+    #mobile-view #welcome-page-container h2 {
+        font-size: 2.5em;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #welc-page-btn-container button {
+        margin-top: 2em;
+        font-size: 1.6em;
+    }
+}
+
+/* mini tablet to large tablet view*/
+@media screen and (min-width: 570px) {
+    #home-page-container {
+        padding-top: 2em;
+    }
+    #welcome-page-container {
+        font-size: 1em;
+    }
+}
+
+/* desktop view */
+@media screen and (min-width: 1650px) {
+    #home-page-container {
+        display: flex;
+        padding-top: 0em;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15em;
+    }
+    #desktop-view {
+        border-radius: 100%;
+        overflow: hidden;
+        background-color: #5843d6;
+        display:flex;
+        margin-left: 25em;
+    }
+    #mobile-view {
+        display: block;
+    }
+    #mobile-view #welcome-page-container h1 {
+        font-size: 5em;
+    }
+    #mobile-view #welcome-page-container h2 {
+        margin-left: 0.2em;
+        margin-top: -1em;
+        font-size: 2em;
+    }
+    #welc-page-btn-container button {
+        font-size: 1.6em;
+    }
+
+    #desktop-view img{
+        height: 26em;
+        width: 29.5em;
+    }
+}

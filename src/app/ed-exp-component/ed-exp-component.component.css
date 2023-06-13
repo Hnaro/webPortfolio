@@ -2,11 +2,15 @@
     background-color: #242424;
     font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
     color:white;
-    width: 100%;
+    width: 100% auto;
     margin-top: -3.5em;
     padding-top: 5em;
     padding-bottom: 3em;
     text-align: center;
+}
+
+.desktop-view {
+    display: none;
 }
 
 #main-title-h1 {
@@ -21,7 +25,7 @@
     margin-bottom: -1.5em;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
-    font-size: 2.2em;
+    font-size: 1em;
     text-align: center;
 }
 
@@ -67,7 +71,7 @@
 }
 
 .content-header-container {
-    margin-top: 5em;
+    margin-top: 2em;
     display: flex;
 }
 
@@ -114,6 +118,114 @@
     background-color: #c7984b;
 }
 
+#desktop-view {
+    display: none;
+}
+
 .intern-info-cont span {
     font-size: 0.6em;
+}
+
+/* small-large tablet view */
+@media screen and (min-width: 570px) {
+    
+}
+
+/* desktop view*/
+@media screen and (min-width: 1650px) {
+    .mobile-view {
+        display: none;
+    }
+    #main-content-container {
+        display: flex;
+    }
+    #edu-exp-container {
+        display: flex;
+        justify-content: center;
+    }
+    #educationExp-page-container #main-title-h1 {
+        font-size: 3em;
+    }
+    #educationExp-page-container {
+        padding-top: 10em;
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+    #education-section-container {
+        margin-right: 2em;
+        margin-left: 2em;
+        font-size: 1.2em;
+        display: inline-block;
+        width: 40%;
+    }
+    .edu-container {
+        margin: 0;
+        margin-bottom: -0.5em;
+        font-size: 0.9em;
+        height: 5em;
+    }
+    #experience-section-container {
+        margin-right: 2em;
+        margin-left: 2em;
+        display: inline-block;
+        width: 60%;
+    }
+    .jobinfo-container {
+        margin-top: -1em;
+        display: inline-block;
+        width: 60%;
+        font-size: 1em;
+        border-right: 0.2em solid white;
+        transform: translateY(-10px);
+    }
+    .jobinfo-container h1 {
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 2.7em;
+    }
+    .job-title-container {
+        font-size: 2.4em;
+        display: inline-block;
+        width: 36%;
+        transform: translateY(-90px);
+        padding-left: 0.5em;
+    }
+
+    .header-section-container {
+        display: none;
+    }
+    .info-container {
+        background: transparent;
+    }
+    .education-container {
+        margin-top:2em;
+        font-size: 1em;
+    }
+    .content-header-container h1{
+        padding-left: -5em;
+        width:fit-content;
+        margin: 0.5em;
+    }
+    .content-header-container {
+        margin: 0em;
+    }
+    .main-content-container {
+        margin-top: 0.5em;
+    }
+    li {
+        list-style-type: none;
+    }
+    #intern-section-container h1 {
+        margin-top: -0.9em;
+        font-size: 4em;
+    }
+    #intern-section-container {
+        display: flex;
+        background-color: #c7984b;
+    }
+    .intern-info-cont {
+        width: 49%;
+        background: transparent;
+    }
+
 }

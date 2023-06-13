@@ -1,4 +1,5 @@
 <div id="nav-bar-container">
+  <!-- mobile view -->
     <div id="mobile-view">
       <div id="container-img">
         <img [hidden]="isSkillsActive"  (click)="sidebar()" id="hamburgIcon" src="../../assets/img/hamburgIcon.png" alt="" srcset="">
@@ -10,15 +11,16 @@
         <img id="logo" src="../../assets/img/Hnaro-logo.png" alt="" srcset="">
       </div>
     </div>
+    <!-- desktop view -->
     <div id="desktop-view">
       <div id="container-img-2">
         <img id="logo" src="../../assets/img/Hnaro-logo.png" alt="" srcset="">
       </div>
       <div id="navbar-btn-container">
-        <button>Home</button>
+        <button><span>Home</span></button>
         <button>Skills</button>
         <button>Education & Experience</button>
-        <button>About</button>
+        <button [class.isHomeActive]="activeHome" id="aboutBtn-style">About</button>
       </div>
     </div>
   </div>

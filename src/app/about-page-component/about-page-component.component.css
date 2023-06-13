@@ -2,11 +2,15 @@
     background-color: #2d293b;
     font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
     color:white;
-    width: 100%;
+    width: 100% auto;
     margin-top: -3.5em;
     padding-top: 5em;
     padding-bottom: 3em;
     text-align: center;
+}
+
+.desktop-view {
+    display: none;
 }
 
 #about-pg-hd-container {
@@ -145,5 +149,88 @@ ul li {
     text-decoration: underline;
     text-align: justify;
     font-size: 1em;
+}
+
+@media screen and (min-width: 570px) {
+
+}
+
+@media screen and (min-width: 1650px) {
+    .mobile-view {
+        display: none;
+    }
+    .desktop-view {
+        display: block;
+    }
+    .desktop-view ul li {
+        font-size: 1.2em;
+        list-style-type: none;
+    }
+    .desktop-view ul li span {
+        margin-top: 0.5em;
+        margin-left: 1em;
+    }
+    .desktop-view img {
+        width: 40px;
+        height: 40px;
+    }
+    #aboutpg-container {
+        padding-top: 10em;
+    }
+    #about-pg-hd-container h1 {
+        font-size: 3.5em;
+    }
+    #about-pg-hd-container h6 {
+        font-size: 1em;
+    }
+    #aboutme-container {
+        width: 65%;
+        padding-right: 5em;
+        display: inline-block;
+    }
+    #aboutme-container ul li {
+        font-size: 1.2em;
+    }
+    #aboutme-container #intro-container {
+        font-size: 1.4em;
+    }
+    #contact-container {
+        width: 25%;
+        display: inline-block;
+    }
+    #contact-container .desktop-view {
+        width: 100%;
+    }
+    #contact-container .desktop-view h1,#contact-container .desktop-view hr{
+        text-align: center;
+        margin: 0 auto;
+    }
+    #aboutme-contact-section-container {
+        display: flex;
+        width: 100% auto;
+        justify-content: center;
+        margin-bottom: 5em;
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+    #hobbie-section-container  {
+        background: transparent;
+    }
+    #hobbie-section-container h1 {
+        margin-left: 3.8em;
+        font-size: 3em;
+        margin-bottom: -1.6em;
+    }
+    #hobbie-section-container ul {
+        display: flex;
+        width: 100% auto;
+        height: 6em;
+        margin-left: 10em;
+        margin-right: 12em;
+        background-color: #ca7650;
+        font-size: 1.5em;
+        padding: 0.5em;
+        justify-content: center;
+    }
 }
 

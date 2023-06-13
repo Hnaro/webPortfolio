@@ -113,3 +113,63 @@
   #email-style {
     height: 0.5em;
   }
+
+  @media screen and (min-width: 570px) {
+
+  }
+  @media screen and (min-width: 1650px) {
+     /* footer design */
+.aboutpg-footer-bg-style {
+  height: 40em;
+  margin-top: -0.5em;
+}
+
+
+.skillpg-footer-bg-style {
+  position: absolute;
+  width: 100%;
+  color: white;
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  height: 40em;
+  margin-top: -0.5em;
+  text-align: center;
+  /* about page bg-color*/
+  background-color: #41329d;
+}
+
+.eduAndExppg-footer-bg-style {
+  height: 40em;
+  margin-top: -0.5em;
+}
+
+#aboutpage-style-container header{
+  font-size: 1.5em;
+}
+
+#aboutpage-style-container #email-style {
+  display: block;
+  width: 25%;
+  height: 2.5em;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+#aboutpage-style-container #email-style[type="text"]{
+  font-size: 1.1em;
+  padding: 0.2em;
+}
+#aboutpage-style-container .txtarea-style {
+  width: 30%;
+  height:15em;
+}
+#aboutpage-style-container .txtarea-style[type=text] {
+  font-size: 1.1em;
+}
+
+#footer-container p {
+  margin-top: 2em;
+  font-size: 1.2em;
+}
+#footer-container #copyright-container {
+  font-size: 1em;
+}
+  }

@@ -3,7 +3,7 @@
   color:white;
   width: 100%;
   margin-top: -3.5em;
-  padding-top: 5em;
+  padding-top: 10em;
   padding-bottom: 3em;
   background: linear-gradient(#5d2e9c 0.5%, #5843d6 30%);
 }
@@ -94,7 +94,9 @@
   #mobile-view {
     display:block;
   }
-
+  #skills-comp-cont {
+    padding-top: 5em;
+  }
   #skills-comp-cont span{
     color:#f6ee06;
   }
