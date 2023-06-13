@@ -13,6 +13,10 @@
     display: none;
 }
 
+.mobile-view {
+    display: block;
+}
+
 #about-pg-hd-container {
   margin-bottom: 2em;
 }
