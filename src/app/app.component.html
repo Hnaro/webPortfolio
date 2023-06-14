@@ -6,7 +6,7 @@
     <app-navbar-component (updateVisibility)="showHome($event)" [isEduAndexpActive]="educationAndExpPageVisibility" [isAboutpgActive]="aboutPageVisibility" [isSkillsActive]="skillspgVisibility" [isHomeActive]="homepgVisibility" (isVisible)="handlevisibility($event)"></app-navbar-component>
   </div>
     <!-- HOME PAGE -->
-    <app-home-page-component (updateVisibility)="showHome($event)" [hidden]="homepgVisibility"></app-home-page-component>
+    <app-home-page-component (activateAboutStyleBtn)="aboutBtn($event)" (updateVisibility)="showHome($event)" [hidden]="homepgVisibility"></app-home-page-component>
     <!-- SKILLS PAGE  -->
     <app-skills-component [hidden]="skillspgVisibility"></app-skills-component>
     <!-- EDUCATION AND EXPERIENCE PAGE -->

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -17,9 +17,14 @@ export class AppComponent {
 
   isHomeActive: boolean = true;
 
+  activateStyleAbout: boolean = false;
+
+  aboutBtn(e: any) {
+    this.activateStyleAbout = e;
+  }
+
   showHome(e:any) {
     // opens make the visibility for home to false
-    console.log("test show home");
     //this.homepgVisibility = e;
 
     if (!e.showHome) {

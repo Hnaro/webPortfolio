@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-navbar-component',
   templateUrl: './navbar-component.component.html',
@@ -10,6 +9,7 @@ export class NavbarComponentComponent implements OnInit {
   @Input() isEduAndexpActive: boolean | undefined;
   @Input() isAboutpgActive: boolean | undefined;
   @Input() isSkillsActive: boolean | undefined;
+
   @Output() isVisible = new EventEmitter();
   @Output() updateVisibility = new EventEmitter();
 
@@ -20,7 +20,7 @@ export class NavbarComponentComponent implements OnInit {
 
   ngOnInit(): void {
     this.isHomeActive = false;
-    this.homeIsActive = !this.isHomeActive
+    this.homeIsActive = !this.isHomeActive;
   }
 
   sidebar(): void {

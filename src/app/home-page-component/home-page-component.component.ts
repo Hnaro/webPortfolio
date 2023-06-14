@@ -8,6 +8,8 @@ import { Component, Output, EventEmitter } from '@angular/core';
 export class HomePageComponentComponent {
   @Output() updateVisibility = new EventEmitter();
 
+  message: string = "from homepage component";
+
   aboutmeBtn(): void {
     this.updateVisibility.emit({ showHome: true, showSkills: true, showEduAndExp: true, showAbout: false});
   }

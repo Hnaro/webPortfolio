@@ -12,7 +12,7 @@ export class NavBarSliderComponent implements OnInit, OnChanges  {
   isHomeActive: boolean = true;
   isSkillsActive: boolean = false;
   isEduAndExpActive: boolean = false;
-  isAboutActive: boolean = false;
+  @Input() isAboutActive: boolean = false;
 
   @Output() updateDataToParent = new EventEmitter();
   @Output() updateHomeVisibility = new EventEmitter();
@@ -59,7 +59,7 @@ export class NavBarSliderComponent implements OnInit, OnChanges  {
     this.isAboutActive = false;
   }
 
-  showAboutPage() {
+  showAboutPage(): void {
     this.updateDataToParent.emit(true);
     this.updateHomeVisibility.emit({ showHome: true, showSkills: true, showEduAndExp: true, showAbout: false});
     this.isHomeActive = false;

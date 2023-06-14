@@ -28,7 +28,7 @@ import { AboutPageComponentComponent } from './about-page-component/about-page-c
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
