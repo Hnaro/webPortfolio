@@ -3,19 +3,28 @@
     <!-- navigation bar links -->
     <app-nav-bar-slider [visibility]="isVisible" (updateHomeVisibility)="showHome($event)" (updateDataToParent)="recieveUpdatedData($event)"></app-nav-bar-slider>
     <!-- navigation bar header -->
-    <app-navbar-component (updateVisibility)="showHome($event)" [isEduAndexpActive]="educationAndExpPageVisibility" [isAboutpgActive]="aboutPageVisibility" [isSkillsActive]="skillspgVisibility" [isHomeActive]="homepgVisibility" (isVisible)="handlevisibility($event)"></app-navbar-component>
+    <app-navbar-component (updateVisibility)="showHome($event)" [isEduAndexpActive]="educationAndExpPageVisibility" [isSkillsActive]="skillspgVisibility" [isHomeActive]="homepgVisibility" (isVisible)="handlevisibility($event)"></app-navbar-component>
   </div>
     <!-- HOME PAGE -->
-    <app-home-page-component (activateAboutStyleBtn)="aboutBtn($event)" (updateVisibility)="showHome($event)" [hidden]="homepgVisibility"></app-home-page-component>
-    <!-- SKILLS PAGE  -->
-    <app-skills-component [hidden]="skillspgVisibility"></app-skills-component>
-    <!-- EDUCATION AND EXPERIENCE PAGE -->
-    <app-ed-exp-component [hidden]="educationAndExpPageVisibility"></app-ed-exp-component>
-    <!-- ABOUT PAGE -->
-    <app-about-page-component [hidden]="aboutPageVisibility"></app-about-page-component>
+    <div id="">
+      <div id="slide-banner-container">
+        <!-- SKILLS PAGE  -->
+        <app-skills-component [hidden]="skillspgVisibility"></app-skills-component>
+        <!-- EDUCATION AND EXPERIENCE PAGE -->
+        <app-ed-exp-component [hidden]="educationAndExpPageVisibility"></app-ed-exp-component>
+        <!-- HOME PAGE -->
+        <app-home-page-component (activateAboutStyleBtn)="aboutBtn($event)" (updateVisibility)="showHome($event)" [hidden]="homepgVisibility"></app-home-page-component>
+      </div>
+      <div id="main-btns-container">
+        <button id="btn-1">Main</button>
+        <button id="main-btnslider-style">Skills & Tools</button>
+        <button>Education & Expirience</button>
+      </div>
+      <app-about-page-component></app-about-page-component>
+    </div>
     <!-- footer component -->
-    <div [hidden]="isHomeActive">
-      <app-footer-component [isEduAndExpPageActive]="educationAndExpPageVisibility" [isAboutPageActive]="aboutPageVisibility" [isSkillsPageActive]="skillspgVisibility" [hidden]="false"></app-footer-component>
+    <div id="footer-section-container">
+      <app-footer-component></app-footer-component>
     </div>
 </div>
 

@@ -1,24 +1,13 @@
-<div id="footer-container" [class.eduAndExppg-footer-bg-style]="eduAndExpBgColorisActive" [class.skillpg-footer-bg-style]="skillsPageBgColorActive" [class.aboutpg-footer-bg-style]="aboutPageBgColorActive">
+<div id="footer-container" [class.aboutpg-footer-bg-style]="true">
     <!-- education and exp page footer content -->
-    <div id="educationpage-footer-style-container" [hidden]="isEduAndExpPageActive">
-        <header>Anything you'd like to suggest to improve my website</header>
-        <input class="txtarea-style" type="text" placeholder="Any Suggestions?">
-    </div>
-
-    <!-- skills page footer content -->
-    <div id="skillspage-style-container" [hidden]="isSkillsPageActive">
-        <header>Did you find the skills you're looking for? </header>
-        <input class="txtarea-style" type="text" placeholder="Send message to the developer...">
-    </div>
-
     <!-- about page footer content -->
-    <div id="aboutpage-style-container" [hidden]="isAboutPageActive">
-        <header>Send an email to developer directly...</header>
-        <input id="email-style" type="text" placeholder="Enter your email">
-        <input class="txtarea-style" type="text" placeholder="Send a message...">
+    <div id="aboutpage-style-container">
+      <div class="desktop-view">
+        <header>Get in touch</header>
+      </div>
+        <app-links></app-links>
     </div>
-
-    <p>Thank you for visiting my <br> website hope you found what you are looking for</p>
+    <p>Thank you for visiting my <br> website hope you find what you're looking for.</p>
     <div id="copyright-container">
       &copy;Copyright 2023
     </div>

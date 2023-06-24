@@ -20,13 +20,11 @@
 
 /* image style */
 #container-img #hamburgIcon{
-  float: left;
   width: 35px;
   height: 28px;
   padding: 1.2em;
 }
 #container-img-2 #logo{
-  float: right;
   width: 102px;
   height: 40px;
   padding: 1.2em;
@@ -101,3 +99,59 @@ footer {
   height: 25em;
   top: 0px;
 }
+
+#slide-banner-container {
+  height: 30em;
+  padding-top: 2em;
+  margin: 0;
+  margin-bottom: -2em;
+  background-color: white;
+}
+
+#main-btns-container {
+  margin: 0 auto;
+  width: fit-content;
+  background-color: #cacaca;
+  display: flex;
+  justify-content: center;
+  border-radius: 2em;
+  overflow: hidden;
+}
+#main-btns-container button {
+  padding: 0.7em;
+  margin: 0em;
+  border: 0px;
+  font-size: 0.8em;
+  background: transparent;
+  font-weight: 500;
+}
+#main-btns-container #btn-1 {
+  background-color: #ec3878;
+  color: white;
+}
+#main-btns-container #main-btnslider-style {
+  border-left: 0.1em solid #aaaaaa;
+  border-right: 0.1em solid #aaaaaa;
+}
+
+@media screen and (min-width: 770px) {
+  #main-btns-container {
+    margin: 0 auto;
+    width: fit-content;
+    background-color: #cacaca;
+    display: flex;
+    justify-content: center;
+    border-radius: 2em;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #main-btns-container {
+    margin-top: 5em;
+    width: 60%;
+    border-radius: 0;
+    background-color: white;
+  }
+}
+

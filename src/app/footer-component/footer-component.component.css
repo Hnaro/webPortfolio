@@ -4,35 +4,13 @@
     width: 100%;
     color: white;
     font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-    height: 24em;
+    height: 10em;
     margin-top: -0.5em;
     text-align: center;
     background-color: #1c1a25;
 }
-
-
-.skillpg-footer-bg-style {
-    position: absolute;
-    width: 100%;
-    color: white;
-    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-    height: 24em;
-    margin-top: -0.5em;
-    text-align: center;
-    /* about page bg-color*/
-    background-color: #41329d;
-}
-
-.eduAndExppg-footer-bg-style {
-    position: absolute;
-    width: 100%;
-    color: white;
-    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-    height: 24em;
-    margin-top: -0.5em;
-    text-align: center;
-    /* education&experience-page bg-color*/
-    background-color: #131313;
+.desktop-view {
+  display: none;
 }
 
 #footer-container header {
@@ -62,7 +40,7 @@
     opacity: 0.9;
     border: 0px;
 }
-  
+
   #footer-container .txtarea-style::placeholder {
     color: #1a1440;
     font-weight: 900;
@@ -72,7 +50,7 @@
     transform: translateY(-45px);
     opacity: 0.9;
   }
-  
+
   #footer-container .txtarea-style[type=text]{
     color: #1a1440;
     font-weight: 900;
@@ -82,7 +60,7 @@
     padding-left: 1em;
     text-align: left;
   }
-  
+
   #footer-container .txtarea-style {
     margin: 0 auto;
     height: 12em;
@@ -90,7 +68,7 @@
     border-radius: 1.2em;
     border: 0px;
   }
-  
+
   #footer-container #copyright-container {
     margin: 0 auto;
     margin-top: 2em ;
@@ -101,7 +79,7 @@
     font-size: 0.8em;
     background-color: #ec3878;
   }
-  
+
   #footer-container p {
     margin-top: 1em;
     font-size: 0.9em;
@@ -115,14 +93,15 @@
   }
 
   /* mobile to tablet view */
-  @media screen and (min-width: 570px) {
-    .aboutpg-footer-bg-style, .eduAndExppg-footer-bg-style, .skillpg-footer-bg-style {
-      height: 27em;
-    }
+  @media screen and (min-width: 770px) {
     #aboutpage-style-container header,     #educationpage-footer-style-container header,     #skillspage-style-container header{
       font-size: 1.5em;
     }
-    
+
+    .aboutpg-footer-bg-style {
+      height: 7em;
+    }
+
     #aboutpage-style-container #email-style {
       display: block;
       width: 35%;
@@ -147,21 +126,15 @@
       margin-bottom: 0.5em;
     }
   }
+  /*desktop design */
   @media screen and (min-width: 1650px) {
+    .desktop-view {
+      display: block;
+    }
      /* footer design */
     .aboutpg-footer-bg-style {
-      height: 40em;
-      margin-top: -0.5em;
-    }
-
-    .skillpg-footer-bg-style {
-      height: 40em;
-      margin-top: -0.5em;
-    }
-
-    .eduAndExppg-footer-bg-style {
-      height: 40em;
-      margin-top: -0.5em;
+      height: 22em;
+      margin-top: -2em;
     }
 
     #aboutpage-style-container header{

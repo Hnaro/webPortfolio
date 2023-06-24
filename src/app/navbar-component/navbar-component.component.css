@@ -8,13 +8,21 @@
     background:transparent;
     justify-content: center;
     z-index: 50000;
+    background-color: #1c1a25;
+}
+
+#container-img-3 img {
+  padding: 1em;
+  text-align: center;
+  width: 4em;
+  height: 3em;
 }
 
 #mobile-view {
   width: 100%;
   display: flex;
 }
-  
+
 /* image container */
 #mobile-view #container-img {
   width: 100%;
@@ -37,6 +45,8 @@
   padding: 1.2em;
 }
 
+
+
 /* screen visibilit view */
 #desktop-view {
   display: none;
@@ -50,41 +60,36 @@
   #tablet-view {
     display: none;
   }
-  .isHomeActive {
-    background-color: #ec3878;
-    text-decoration: underline;
-    color: #ec3878;
-  }
-
-  .isHomeActive span {
-    font-weight: 900;
-  }
 }
 
 /* desktop view */
 @media screen and (min-width: 1250px) {
   #nav-bar-container {
-    position: fixed;
-    background-color: white;
-    opacity: 0.9;
+    height: 6em;
+  }
+  .isHomeActive{
+    color: #ec3878;
+  }
+  .isHomeActive span {
+    font-size: 1.3em;
+    color: #ec3878;
   }
   #mobile-view {
     display: none;
   }
   #desktop-view {
     width: 100%;
+    height: 5em;
+    background-color: #1c1a25;
     display:flex;
-    margin-left: 2.5em;
-    margin-right: 2.5em;
   }
   #desktop-view #container-img-2 {
-    padding: 0.5em;
+    padding: 0.2em;
     margin-left: 5em;
-    margin-top: 0.7em;
   }
   #desktop-view #container-img-2 img {
-    width: 150px;
-    height: 50px;
+    width: 120px;
+    height: 45px;
   }
   #navbar-btn-container {
     text-align: right;
@@ -97,11 +102,18 @@
   #navbar-btn-container button {
     border: 0px;
     background: transparent;
-    font-size: 1.4em;
+    font-size: 1.1em;
     margin-top: 1.3em;
-    margin-left: 1em;
-    margin-right: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
     font-weight: 600;
+    color: white;
+  }
+  #navbar-btn-container button span:hover {
+    color:#ec3878;
+    cursor: pointer;
+    font-size: 1.3em;
+    transition: 150ms;
   }
   #aboutBtn-style {
     padding-left: 7em;

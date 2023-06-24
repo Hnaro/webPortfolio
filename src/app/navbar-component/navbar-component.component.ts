@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
+
 @Component({
   selector: 'app-navbar-component',
   templateUrl: './navbar-component.component.html',
@@ -7,7 +8,6 @@ import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
 export class NavbarComponentComponent implements OnInit {
   @Input() isHomeActive: boolean | undefined;
   @Input() isEduAndexpActive: boolean | undefined;
-  @Input() isAboutpgActive: boolean | undefined;
   @Input() isSkillsActive: boolean | undefined;
 
   @Output() isVisible = new EventEmitter();
@@ -16,7 +16,9 @@ export class NavbarComponentComponent implements OnInit {
   homeIsActive: boolean | undefined;
   skillsIsActive: boolean | undefined;
   eduAndExpIsActive: boolean | undefined;
-  aboutIsActive: boolean | undefined;
+  ismouseOverActive: boolean = false;
+
+  ismouseOverSkills: boolean | undefined;
 
   ngOnInit(): void {
     this.isHomeActive = false;
@@ -34,7 +36,6 @@ export class NavbarComponentComponent implements OnInit {
     this.homeIsActive=home;
     this.skillsIsActive=skills;
     this.eduAndExpIsActive=eduAndExpIsActive;
-    this.aboutIsActive=aboutIsActive;
   }
 
   homePgBtn() {
@@ -48,9 +49,5 @@ export class NavbarComponentComponent implements OnInit {
   eduAndExpPgBtn() {
     this.updateVisibility.emit({ showHome: true, showSkills: true, showEduAndExp: false, showAbout: true});
     this.checkVisibility(false, false, true, false);
-  }
-  aboutPgBtn() {
-    this.updateVisibility.emit({ showHome: true, showSkills: true, showEduAndExp: true, showAbout: false});
-    this.checkVisibility(false, false , false, true);
   }
 }

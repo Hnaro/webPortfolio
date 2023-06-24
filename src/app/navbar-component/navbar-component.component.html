@@ -5,7 +5,9 @@
         <img [hidden]="isSkillsActive"  (click)="sidebar()" id="hamburgIcon" src="assets/img/hamburgIcon.png" alt="" srcset="">
         <img [hidden]="isHomeActive"  (click)="sidebar()" id="hamburgIcon" src="assets/img/hamburgIcon.png" alt="" srcset="">
         <img [hidden]="isEduAndexpActive" (click)="sidebar()" id="hamburgIcon" src="assets/img/skills page icons/hamburger_2.png" alt="" srcset="">
-        <img [hidden]="isAboutpgActive" (click)="sidebar()" id="hamburgIcon" src="assets/img/hamburgIcon_3.png" alt="" srcset="">
+      </div>
+      <div id="container-img-3">
+        <img src="assets/img/mainBanner.png" loading="lazy" alt="web banner logo">
       </div>
       <div id="container-img-2">
         <img id="logo" src="assets/img/Hnaro-logo.png" alt="" srcset="">
@@ -16,11 +18,18 @@
       <div id="container-img-2">
         <img id="logo" src="assets/img/Hnaro-logo.png" alt="" srcset="">
       </div>
+      <!-- nav bar links -->
       <div id="navbar-btn-container">
-        <button (click)="homePgBtn()" [class.isHomeActive]="homeIsActive"><span>Home</span></button>
-        <button (click)="skillsPgBtn()" [class.isHomeActive]="skillsIsActive">Skills</button>
-        <button (click)="eduAndExpPgBtn()" [class.isHomeActive]="eduAndExpIsActive">Education & Experience</button>
-        <button (click)="aboutPgBtn()" [class.isHomeActive]="aboutIsActive" id="aboutBtn-style">About</button>
+        <button
+          (click)="homePgBtn()"
+          [class.isHomeActive]="homeIsActive">
+          <span>Home</span>
+        </button>
+        <button
+        (click)="skillsPgBtn()"
+        [class.isHomeActive]="skillsIsActive">
+        <span>Projects</span>
+      </button>
       </div>
     </div>
   </div>

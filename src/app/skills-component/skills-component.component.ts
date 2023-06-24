@@ -51,6 +51,7 @@ export class SkillsComponentComponent {
     {name:"Typescript", path:"assets/img/typescript.png"},
     {name:"Java",path:"assets/img/java.png"},
     {name:"Git",path:"assets/img/git.png"},
+    {name:"Php", path:"assets/img/php.png"},
     {name:"New Skills?",path:"assets/img/vacant.png"}
   ];
 }

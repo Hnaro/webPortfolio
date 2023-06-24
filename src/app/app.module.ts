@@ -11,6 +11,8 @@ import { FooterComponentComponent } from './footer-component/footer-component.co
 import { HomePageComponentComponent } from './home-page-component/home-page-component.component';
 import { EdExpComponentComponent } from './ed-exp-component/ed-exp-component.component';
 import { AboutPageComponentComponent } from './about-page-component/about-page-component.component';
+import { LinksComponent } from './links/links.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { AboutPageComponentComponent } from './about-page-component/about-page-c
     FooterComponentComponent,
     HomePageComponentComponent,
     EdExpComponentComponent,
-    AboutPageComponentComponent
+    AboutPageComponentComponent,
+    LinksComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [ ],
   bootstrap: [AppComponent]

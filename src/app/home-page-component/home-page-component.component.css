@@ -1,39 +1,52 @@
-#welc-page-btn-container {
-    display: flex;
-    align-items: center;
-}
 /* about me button style */
-#welc-page-btn-container button {
-    text-align: center;
-    margin: 0 auto;
-    font-size: 1.2em;
-    border-radius: 0.5em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    color: white;
-    font-weight: 750;
-    border: 0px;
-    background-color: #000081;
-    box-shadow: -0.1em 0.1em 0.1em 0.1em #909090;
+#welc-page-links-container {
+  text-align: center;
 }
-#home-page-container {
-    margin-top: 10em;
-    padding-left: 2em;
+#welc-page-links-container img {
+  border-radius:100%;
+  width: 2em;
+  height: 2em;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: #000081;
+  box-shadow: 0.1em 0.1em 0.1em 0.1em darkgrey;
 }
 
+#highlight-info-style {
+  color: #5843d6;
+  font-weight: 700;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2em;
+}
+#home-page-container {
+    text-align: left;
+}
+#section-1-banner {
+  padding-top: 5em;
+  display: block;
+}
+#section-2-info {
+  display: block;
+}
 #home-page-container h1 {
     color: #5843d6;
     font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 600;
+    text-align: center;
 }
 #home-page-container h2 {
     text-align: center;
-    margin-left: -2em;
+    font-size: 1.8;
     font-stretch:extra-expanded;
     font-style: italic;
+}
+#short-description-container {
+  margin: 0 auto;
+}
+#short-description-container p {
+  font-size: 0.8em;
+  text-align: center;
 }
 h2 span {
     color: #d34747;
@@ -47,69 +60,59 @@ h2 span {
     display: none;
 }
 
-/* tablet view */
-@media screen and (min-width: 570px) {
-    #desktop-view {
-        display: none;
-    }
-    #mobile-view #welcome-page-container h1 {
-        font-size: 4em;
-        text-align: center;
-    }
-    #mobile-view #welcome-page-container h2 {
-        font-size: 2.5em;
-        margin: 0 auto;
-        text-align: center;
-    }
-    #welc-page-btn-container button {
-        margin-top: 2em;
-        font-size: 1.6em;
-    }
-}
-
 /* mini tablet to large tablet view*/
-@media screen and (min-width: 570px) {
-    #home-page-container {
-        padding-top: 2em;
-    }
-    #welcome-page-container {
-        font-size: 1em;
-    }
+@media screen and (min-width: 770px) {
+  #desktop-view {
+    display: none;
+  }
+  #short-description-container p {
+    width: 400px;
+    margin: 0 auto;
+  }
+
 }
 
 /* desktop view */
-@media screen and (min-width: 1650px) {
-    #home-page-container {
-        display: flex;
-        padding-top: 0em;
-        align-items: center;
-        justify-content: center;
-        margin-top: 15em;
-    }
-    #desktop-view {
-        border-radius: 100%;
-        overflow: hidden;
-        background-color: #5843d6;
-        display:flex;
-        margin-left: 25em;
-    }
-    #mobile-view {
-        display: block;
-    }
-    #mobile-view #welcome-page-container h1 {
-        font-size: 5em;
-    }
-    #mobile-view #welcome-page-container h2 {
-        margin-left: 0.2em;
-        margin-top: -1em;
-        font-size: 2em;
-    }
-    #welc-page-btn-container button {
-        font-size: 1.6em;
-    }
-
-    #desktop-view img{
-        height: 26em;
-        width: 29.5em;
-    }
+@media screen and (min-width: 1200px) {
+  #welcome-page-container {
+    margin-left: -5em;
+  }
+  #short-description-container p {
+    text-align: left;
+  }
+  #short-description-container{
+    margin: 2em;
+    padding-left: 5em;
+  }
+  #welc-page-links-container {
+    display: none;
+  }
+  #home-page-container {
+      padding-top: 0em;
+      align-items: center;
+      justify-content: center;
+  }
+  #desktop-view {
+      display: flex;
+  }
+  #section-1-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mobile-view {
+    text-align: left;
+  }
+  #mobile-view #welcome-page-container h1 {
+      font-size: 5em;
+  }
+  #mobile-view #welcome-page-container h2 {
+      margin-left: 0.2em;
+      margin-top: -1em;
+      font-size: 2em;
+  }
+  #desktop-view img{
+      height: 20em;
+      width: 23.5em;
+  }
 }

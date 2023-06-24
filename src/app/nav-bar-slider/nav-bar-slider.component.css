@@ -1,11 +1,11 @@
 .nav-bar-slider-container {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  margin-top: -3em;
+  position: absolute;
+  width: 60%;
+  height: 45%;
+  margin-left: 2em;
   background: white;
   z-index: 500000;
-  box-shadow: -0.2em 0.2em 0.2em 0.3em grey;
+  box-shadow: -0.2em 0.2em 1em 0.1em #1a1440;
 }
 
 #slider-bar-head-cont {
@@ -32,10 +32,6 @@
   border: 0px;
   color:#ec3878;
   background: transparent;
-}
-
-#slider-bar-link-cont {
-  margin-top: 3em;
 }
 
 #side-bar-close-cont {
@@ -76,10 +72,10 @@ li button {
   margin-left: -1.5em;
   padding-left: 0.5em;
   height: 2em;
-  font-size: 1.7em;
+  font-size: 1em;
   border-left: 0em;
   background-color:#5843d6;
-  width: 100% auto;
+  width: 100%;
 }
 
 .isHomeActive button {

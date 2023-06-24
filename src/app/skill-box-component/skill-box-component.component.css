@@ -8,7 +8,10 @@
   height: 5em;
   width: 6em;
   text-align: center;
-  background-color: #1b0f33;
+  color: #1b0f33;
+  /*
+  c
+  background-color: #1b0f33;*/
 }
 
 #skill-box img {

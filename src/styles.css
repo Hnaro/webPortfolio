@@ -2,7 +2,6 @@
 
 body {
   font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-  background-color: white;
   margin: 0 auto;
   padding: 0;
 }
@@ -18,4 +17,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #ec3878;    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */  /* creates padding around scroll thumb */
+}
+.hide-mobileView {
+  display: none;
 }
