@@ -4,7 +4,6 @@
     color: white;
     font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
     height: 10em;
-    margin-top: -0.5em;
     text-align: center;
     background-color: #1c1a25;
 }
@@ -93,14 +92,12 @@
 
   /* mobile to tablet view */
   @media screen and (min-width: 770px) {
-    #aboutpage-style-container header,     #educationpage-footer-style-container header,     #skillspage-style-container header{
+    #aboutpage-style-container header {
       font-size: 1.5em;
     }
-
     .aboutpg-footer-bg-style {
       height: 7em;
     }
-
     #aboutpage-style-container #email-style {
       display: block;
       width: 35%;
@@ -116,7 +113,7 @@
       width: 50%;
       height:10em;
     }
-    #aboutpage-style-container .txtarea-style[type=text], #skillspage-style-container .txtarea-style[type=text], #educationpage-footer-style-container .txtarea-style[type=text] {
+    #aboutpage-style-container .txtarea-style[type=text] {
       font-size: 1em;
     }
     #footer-container #copyright-container {
@@ -135,11 +132,9 @@
       height: 22em;
       margin-top: -2em;
     }
-
     #aboutpage-style-container header{
       font-size: 1.5em;
     }
-
     #aboutpage-style-container #email-style {
       display: block;
       width: 25%;
@@ -158,24 +153,6 @@
     #aboutpage-style-container .txtarea-style[type=text] {
       font-size: 1.1em;
     }
-
-    #skillspage-style-container header, #educationpage-footer-style-container header {
-      margin-top: 0.5em;
-      font-size: 1.5em;
-    }
-
-    #skillspage-style-container .txtarea-style, #educationpage-footer-style-container .txtarea-style {
-      margin-top: 2em;
-      width: 30%;
-      height: 20em;
-    }
-    #skillspage-style-container .txtarea-style[type=text], #educationpage-footer-style-container .txtarea-style[type=text] {
-      font-size: 1em;
-    }
-    #skillspage-style-container .txtarea-style::placeholder, #educationpage-footer-style-container .txtarea-style::placeholder {
-      transform: translateY(-120px);
-    }
-
     #footer-container p {
       margin-top: 2.5em;
       font-size: 1.2em;

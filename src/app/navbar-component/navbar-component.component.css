@@ -44,7 +44,9 @@
   height: 40px;
   padding: 1.2em;
 }
-
+#container-img img:hover {
+  cursor: pointer;
+}
 
 
 /* screen visibilit view */

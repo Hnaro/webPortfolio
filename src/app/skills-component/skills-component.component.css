@@ -31,7 +31,7 @@
 }
 #skills-box-container {
   text-align: center;
-  font-size: 1em;
+  font-size: 0.77em;
 }
 #skills-comp-cont {
   padding: 2em;
@@ -39,7 +39,7 @@
   width: auto;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 770px) {
   #mobile-view {
     display: none;
   }
@@ -58,14 +58,17 @@
     height: auto;
     width: auto;
   }
+  #skills-box-container {
+   font-size: 0.8em;
+  }
 }
 
+/* desktop view */
 @media screen and (min-width: 1000px) {
   #skills-comp-cont {
     width: 60%;
   }
+  #skills-box-container {
+    font-size: 1em;
+   }
 }
-
-
-
-/* desktop view */

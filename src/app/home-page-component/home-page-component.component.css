@@ -60,6 +60,9 @@ h2 span {
 #desktop-view {
     display: none;
 }
+#welc-page-links-container {
+  margin-top: 2em;
+}
 
 /* mini tablet to large tablet view*/
 @media screen and (min-width: 770px) {
@@ -70,11 +73,10 @@ h2 span {
     width: 400px;
     margin: 0 auto;
   }
-
 }
 
 /* desktop view */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   #welcome-page-container {
     margin-left: -5em;
   }
