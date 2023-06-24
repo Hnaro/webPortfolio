@@ -1,7 +1,7 @@
 #skills-comp-cont {
   font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
   color:white;
-  width: 80%;
+  width: 70%;
   height: 25em;
   margin: 0 auto;
   /*background: linear-gradient(#5d2e9c 0.5%, #5843d6 30%);*/
@@ -60,36 +60,9 @@
   }
 }
 
-@media screen and (min-width: 1650px) {
-  #mobile-view {
-    display:none;
-  }
-  #tablet-view {
-    display: none;
-  }
-
-  #desktop-view {
-    display: block;
-    border-radius: 0.5em;
-    padding-left: 2em;
-    margin: 0 auto;
-    width: 70%;
-    height:15em;
-    padding-right: 5em;
-    padding-bottom: 5em;
-  }
-
-  #skills-comp-cont span{
-    color:#f6ee06;
-  }
-
-  .skill-box-row {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  #skills-box-container {
-    font-size: 1.3em;
+@media screen and (min-width: 1000px) {
+  #skills-comp-cont {
+    width: 60%;
   }
 }
 

@@ -1,6 +1,5 @@
  /* footer design */
 .aboutpg-footer-bg-style {
-    position: absolute;
     width: 100%;
     color: white;
     font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
@@ -81,7 +80,7 @@
   }
 
   #footer-container p {
-    margin-top: 1em;
+    padding-top: 0.7em;
     font-size: 0.9em;
     font-weight: 900;
     padding-left: 2.46em;
@@ -127,7 +126,7 @@
     }
   }
   /*desktop design */
-  @media screen and (min-width: 1650px) {
+  @media screen and (min-width:1000px) {
     .desktop-view {
       display: block;
     }

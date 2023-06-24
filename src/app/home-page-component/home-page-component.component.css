@@ -46,6 +46,7 @@
 }
 #short-description-container p {
   font-size: 0.8em;
+  padding: 0em 2em 0em 2em;
   text-align: center;
 }
 h2 span {

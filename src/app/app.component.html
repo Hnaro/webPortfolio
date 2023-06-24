@@ -7,24 +7,21 @@
   </div>
     <!-- HOME PAGE -->
     <div id="">
+      <app-home-page-component (activateAboutStyleBtn)="aboutBtn($event)" (updateVisibility)="showHome($event)"></app-home-page-component>
+      <div id="main-btns-container">
+        <button id="btn-1">Main</button>
+        <button id="main-btnslider-style">Skills & Tools</button>
+        <button>Education & Expirience</button>
+      </div>
       <div id="slide-banner-container">
         <!-- SKILLS PAGE  -->
         <app-skills-component [hidden]="skillspgVisibility"></app-skills-component>
         <!-- EDUCATION AND EXPERIENCE PAGE -->
         <app-ed-exp-component [hidden]="educationAndExpPageVisibility"></app-ed-exp-component>
         <!-- HOME PAGE -->
-        <app-home-page-component (activateAboutStyleBtn)="aboutBtn($event)" (updateVisibility)="showHome($event)" [hidden]="homepgVisibility"></app-home-page-component>
+        <app-about-page-component [hidden]="homepgVisibility"></app-about-page-component>
+        <app-footer-component></app-footer-component>
       </div>
-      <div id="main-btns-container">
-        <button id="btn-1">Main</button>
-        <button id="main-btnslider-style">Skills & Tools</button>
-        <button>Education & Expirience</button>
-      </div>
-      <app-about-page-component></app-about-page-component>
-    </div>
-    <!-- footer component -->
-    <div id="footer-section-container">
-      <app-footer-component></app-footer-component>
     </div>
 </div>
 

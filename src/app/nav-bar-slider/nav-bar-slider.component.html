@@ -1,4 +1,4 @@
-<div [class.eduAndExp-style]="isEduAndExpActive" [class.skills-style]="isSkillsActive" [hidden]="visibility" [class.nav-bar-slider-container]="isHomeActive">
+<div [hidden]="visibility" class="nav-bar-slider-container">
   <div id="slider-bar-head-cont">
     <div id="side-bar-close-cont">
       <img (click)="close()" src="assets/img/backarrow.png" alt="">
@@ -6,9 +6,8 @@
   </div>
   <div id="slider-bar-link-cont">
     <ul>
-      <li [class.isHomeActive]="isHomeActive" ><button (click)="showHomePage()">Home</button></li>
-      <li [class.isSkillsActive]="isSkillsActive"><button (click)="showSkillsPage()">Skills</button></li>
-      <li [class.isEduAndExpActive]="isEduAndExpActive"><button (click)="showEduAndExpPage()">Education & Experiences</button></li>
+      <li [class.isHomeActive]="isHomePageBtnStyleActive" ><button (click)="onClickHomePage()">Home</button></li>
+      <li [class.isHomeActive]="isProjectpageBtnStyleActive"><button (click)="onClickProjects()">Projects</button></li>
       <!-- <li><button>Projects</button></li> -->
     </ul>
   </div>

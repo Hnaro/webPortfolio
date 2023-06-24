@@ -1,11 +1,13 @@
 .nav-bar-slider-container {
   position: absolute;
-  width: 60%;
-  height: 45%;
+  width: 50%;
+  height: 35%;
   margin-left: 2em;
   background: white;
   z-index: 500000;
-  box-shadow: -0.2em 0.2em 1em 0.1em #1a1440;
+  border-left: 0.1em solid #ec3878;
+  border-bottom: 0.1em solid #ec3878;
+  box-shadow: 0.5em 0.2em 0em 0.1em black;
 }
 
 #slider-bar-head-cont {
@@ -48,6 +50,7 @@
 
 ul {
   list-style: none;
+  margin: 0em;
 }
 
 li {
@@ -56,8 +59,7 @@ li {
 }
 
 li button {
-  /*color: white;*/
-  color: #5843d6;
+  color: black;
   font-size: 1em;
   font-weight: 900;
   width: 100%;
@@ -74,7 +76,7 @@ li button {
   height: 2em;
   font-size: 1em;
   border-left: 0em;
-  background-color:#5843d6;
+  background-color: black;
   width: 100%;
 }
 
@@ -84,93 +86,3 @@ li button {
   text-align: left;
 }
 
-.skills-style {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  margin-top: -3em;
-  background: #5843d6;
-  z-index: 500000;
-  box-shadow: -0.2em 0.2em 0.2em 0.3em grey;
-}
-
-.skills-style #side-bar-logo-cont {
-  background-color: #5843d6;
-}
-
-.skills-style #slider-bar-link-cont button {
-  color: white;
-}
-
-.isSkillsActive {
-  margin-top: 1em;
-  padding-top: 0.5em;
-  margin-left: -1.5em;
-  padding-left: 0.5em;
-  height: 2em;
-  font-size: 1.7em;
-  border-left: 0em;
-  background-color: #1a1440;
-  width: 100% auto;
-}
-
-.eduAndExp-style {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  margin-top: -3em;
-  background: #242424;
-  z-index: 500000;
-  box-shadow: -0.2em 0.2em 0.2em 0.3em grey;
-}
-
-.eduAndExp-style #side-bar-logo-cont {
-  background-color: #242424;
-}
-
-.eduAndExp-style #slider-bar-link-cont button {
-  color: white;
-}
-
-.isEduAndExpActive {
-  margin-top: 1em;
-  padding-top: 1em;
-  margin-left: -1.5em;
-  padding-left: 0.5em;
-  height: 2.7em;
-  font-size: 1.5em;
-  border-left: 0em;
-  color: white;
-  background-color: #c7984b;
-  width: 100% auto;
-}
-
-.about-style {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  margin-top: -3em;
-  background: #2d293b;
-  z-index: 500000;
-  box-shadow: -0.2em 0.2em 0.2em 0.3em grey;
-}
-
-.about-style #side-bar-logo-cont {
-  background-color: #2d293b;
-}
-
-.about-style #slider-bar-link-cont button {
-  color: white;
-}
-
-.isAboutActive {
-  margin-top: 1em;
-  padding-top: 0.5em;
-  margin-left: -1.5em;
-  padding-left: 0.5em;
-  height: 2em;
-  font-size: 1.7em;
-  border-left: 0em;
-  background-color: #ca7650;
-  width: 100% auto;
-}

@@ -65,7 +65,7 @@
 /* desktop view */
 @media screen and (min-width: 1250px) {
   #nav-bar-container {
-    height: 6em;
+    height: 5.5em;
   }
   .isHomeActive{
     color: #ec3878;
