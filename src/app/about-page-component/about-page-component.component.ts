@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-page-component.component.css']
 })
 export class AboutPageComponentComponent {
-
 }

@@ -13,6 +13,7 @@ import { EdExpComponentComponent } from './ed-exp-component/ed-exp-component.com
 import { AboutPageComponentComponent } from './about-page-component/about-page-component.component';
 import { LinksComponent } from './links/links.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [ ],
   bootstrap: [AppComponent]

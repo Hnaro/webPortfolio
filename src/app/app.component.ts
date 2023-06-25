@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { state, trigger, animate, transition, style } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  animations: []
 })
 export class AppComponent implements OnInit {
   isVisible:boolean | undefined;
@@ -19,8 +21,13 @@ export class AppComponent implements OnInit {
   isSkillsActive: boolean = false;
   isEduActive: boolean = false;
 
+  isMainAimationTrigger: boolean = false;
+
+  constructor() {}
+
   ngOnInit(): void {
     this.isMainSectionActive = false;
+    this.isMainAimationTrigger = true;
   }
 
   onClick(isActive: string) {
@@ -28,14 +35,17 @@ export class AppComponent implements OnInit {
     switch(isActive) {
       case 'main':
         this.isMainActive = true;
+        this.isMainAimationTrigger = true;
         this.isMainSectionActive = !this.isMainActive;
         break;
       case 'skills':
         this.isSkillsActive = true;
+        this.isMainAimationTrigger = false;
         this.isSkillsSectionActive = !this.isSkillsActive
         break;
       case 'edu':
         this.isEduActive = true;
+        this.isMainAimationTrigger = false;
         this.isEduSectionActive = !this.isEduActive
         break;
     }
