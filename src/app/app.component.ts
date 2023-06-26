@@ -23,7 +23,13 @@ export class AppComponent implements OnInit {
 
   isMainAimationTrigger: boolean = false;
 
-  constructor() {}
+  // use for animation to which state is active 
+  // has Active, recentActive, nonRecentActive
+  componentState: string;
+
+  constructor() {
+    this.componentState = 'currentActive'
+  }
 
   ngOnInit(): void {
     this.isMainSectionActive = false;
