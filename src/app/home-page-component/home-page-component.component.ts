@@ -9,27 +9,27 @@ import { trigger, animate, transition, style } from '@angular/animations'
     trigger('fadeInSlideDown', [
       transition('void => *', [
         style({
-          opacity: 0.3,
+          opacity: 0,
           transform: 'translateY(-10%)'
         }),
-        animate('0.8s')
+        animate('0.3s')
       ])
     ]),
     trigger('slideInRightToLeft', [
       transition('void => *', [
         style({
-          transform: 'translateX(10%)'
+          transform: 'translateX(20%)'
         }),
-        animate('0.8s')
+        animate('0.3s')
       ])
     ]),
-    trigger('slideInLeftToLeft', [
+    trigger('slideInLeftToRight', [
       transition('void => *', [
         style({
           opacity: 0,
           transform: 'translateX(-20%)'
         }), 
-        animate('1s')
+        animate('0.3s')
       ])
     ])
   ]
