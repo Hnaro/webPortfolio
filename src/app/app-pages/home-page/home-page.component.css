@@ -1,0 +1,186 @@
+/*mobile design*/
+#nav-bar-container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 0px;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    background:transparent;
+    justify-content: center;
+    z-index: 50000;
+  }
+  
+  #welc-page-links-container {
+    padding-top: 5em;
+  }
+  
+  /* image container */
+  #container-img {
+    width: 50%;
+  }
+  #container-img-2 {
+    width: 50%;
+  }
+  
+  /* image style */
+  #container-img #hamburgIcon{
+    width: 35px;
+    height: 28px;
+    padding: 1.2em;
+  }
+  #container-img-2 #logo{
+    width: 102px;
+    height: 40px;
+    padding: 1.2em;
+  }
+  
+  
+  /* div arrange*/
+  .main-container {
+    margin-top: 3em;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  /* welcome page container */
+  #welcome-page-container {
+    margin-top: 10em;
+    padding-left: 2em;
+  }
+  
+  #welcome-page-container h1 {
+    color: #5843d6;
+    font-size: 3em;
+    font-weight: 600;
+  }
+  #welcome-page-container h2 {
+    text-align: center;
+    margin-left: -2em;
+    font-stretch:extra-expanded;
+    font-style: italic;
+  }
+  h2 span {
+    color: #d34747;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  #pink-color {
+    color: #ec3878;
+  }
+  
+  #welc-page-btn-container {
+    display: flex;
+    align-items: center;
+  }
+  /* about me button style */
+  #welc-page-btn-container button {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2em;
+    border-radius: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: white;
+    font-weight: 750;
+    border: 0px;
+    background-color: #000081;
+    box-shadow: -0.1em 0.1em 0.1em 0.1em #909090;
+  }
+  
+  #outer-container {
+   /*background: linear-gradient(#5d2e9c 0.5%, #5843d6 30%);*/
+  }
+  
+  /*skill page styles*/
+  #skills-page {
+    margin-bottom: 10em;
+  }
+  
+  footer {
+    width: 100%;
+    position: absolute;
+    height: 25em;
+    top: 0px;
+  }
+  
+  #slide-banner-container {
+    padding-bottom: 2em;
+    padding-top: 1em;
+    margin: 0;
+    margin-bottom: -2em;
+    background-color: white;
+  }
+  
+  #main-btns-container {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    overflow: hidden;
+  }
+  #main-btns-container button {
+    padding: 0.7em;
+    margin: 0em;
+    border: 0px;
+    color: black;
+    font-size: 0.8em;
+    background: transparent;
+    font-weight: 500;
+  }
+  #main-btns-container #btn-1 {
+    background-color: #ec3878;
+    color: white;
+  }
+  #main-btns-container #main-btnslider-style {
+    border-left: 0.1em solid #aaaaaa;
+    border-right: 0.1em solid #aaaaaa;
+  }
+  #main-btns-container button:hover {
+    transition: 0.3s;
+    background-color: #ec3878;
+    color: white;
+    cursor: pointer;
+  }
+  #main-btns-container .isActive {
+    background-color: #ec3878;
+    color: white;
+  }
+  
+  /* style for buttons to highlight who is active*/
+  
+  @media screen and (min-width: 770px) {
+    #slide-banner-container {
+      padding-top: 2em;
+      padding-bottom: 2em;
+      margin: 0;
+      margin-bottom: -2em;
+      background-color: white;
+    }
+    #main-btns-container {
+      margin: 0 auto;
+      width: fit-content;
+      display: flex;
+      justify-content: center;
+      margin-top: 2em;
+      overflow: hidden;
+    }
+  }
+  
+  @media screen and (min-width: 1000px) {
+    #main-btns-container {
+      margin-top: 5em;
+      width: 70%;
+      border-radius: 0;
+      background-color: white;
+    }
+    #slide-banner-container {
+      padding-top: 2em;
+      margin: 0;
+      margin-bottom: -2em;
+      background-color: white;
+    }
+  }
+  
+  

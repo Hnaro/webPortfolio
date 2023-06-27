@@ -5,9 +5,7 @@
   margin-left: 2em;
   background: white;
   z-index: 500000;
-  border-left: 0.1em solid #ec3878;
-  border-bottom: 0.1em solid #ec3878;
-  box-shadow: 0.5em 0.2em 0em 0.1em black;
+  box-shadow: 0.1em 0.1em 0.3em 0.1em black;
 }
 
 #slider-bar-head-cont {
@@ -76,7 +74,7 @@ li button {
   height: 2em;
   font-size: 1em;
   border-left: 0em;
-  background-color: black;
+  background-color: #5a41d1;
   width: 100%;
 }
 

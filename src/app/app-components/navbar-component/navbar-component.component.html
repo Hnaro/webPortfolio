@@ -19,11 +19,13 @@
       <!-- nav bar links -->
       <div id="navbar-btn-container">
         <button
+        routerLink="/"
           (click)="homePgBtn()"
           [class.isHomeActive]="homeIsActive">
           <span>Home</span>
         </button>
         <button
+        routerLink="/projects"
         (click)="skillsPgBtn()"
         [class.isHomeActive]="skillsIsActive">
         <span>Projects</span>

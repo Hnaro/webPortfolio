@@ -1,0 +1,14 @@
+<app-home-page-component (activateAboutStyleBtn)="aboutBtn($event)"></app-home-page-component>
+<div id="main-btns-container">
+    <button (click)="onClick('main')" [class.isActive]="isMainActive">Main</button>
+    <button (click)="onClick('skills')" id="main-btnslider-style" [class.isActive]="isSkillsActive">Skills & Tools</button>
+    <button (click)="onClick('edu')" [class.isActive]="isEduActive">Education & Expirience</button>
+</div>
+<div id="slide-banner-container">
+    <!-- SKILLS PAGE  -->
+    <app-skills-component [@ease-in]="isSkillsAnimationTrigger ? 'currentState' :'' " [hidden]="isSkillsSectionActive"></app-skills-component>
+    <!-- EDUCATION AND EXPERIENCE PAGE -->
+    <app-ed-exp-component [@ease-in]="isEduAnimationTrigger ? 'currentState' :'' " [hidden]="isEduSectionActive"></app-ed-exp-component>
+    <!-- HOME PAGE -->
+    <app-about-page-component [@ease-in]="isMainAimationTrigger ? 'currentState' :'' " [hidden]="isMainSectionActive"></app-about-page-component>
+</div>
