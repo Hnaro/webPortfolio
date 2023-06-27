@@ -1,0 +1,14 @@
+<div [hidden]="visibility" class="nav-bar-slider-container">
+  <div id="slider-bar-head-cont">
+    <div id="side-bar-close-cont">
+      <img (click)="close()" src="assets/img/backarrow.png" alt="">
+    </div>
+  </div>
+  <div id="slider-bar-link-cont">
+    <ul>
+      <li [class.isHomeActive]="isHomePageBtnStyleActive" ><button routerLink="/" (click)="onClickHomePage()">Home</button></li>
+      <li [class.isHomeActive]="isProjectpageBtnStyleActive"><button routerLink="/projects" (click)="onClickProjects()">Projects</button></li>
+      <!-- <li><button>Projects</button></li> -->
+    </ul>
+  </div>
+</div>
