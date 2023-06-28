@@ -1,0 +1,32 @@
+#project-box-container {
+  padding: 2.2em;
+  background-color: white;
+  width: 65%;
+  margin: 0 auto;
+  text-align: left;
+  box-shadow: 0em 0.2em 0.2em 0.1em rgb(214, 214, 214);
+}
+#project-img {
+  margin: 0 auto;
+  background-color: grey;
+  height:10em;
+  width: 14em auto;
+}
+#project-box-container p {
+  font-size: 0.8em;
+}
+#project-box-btns-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+#project-box-btns-container button {
+  margin-left: 2em;
+  margin-right: 2em;
+  border: 0;
+  border-radius:0.3em;
+  color: white;
+  padding: 0.6em;
+  font-weight: 700;
+  background-color: #5a41d1;
+}

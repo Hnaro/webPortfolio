@@ -17,6 +17,7 @@ import { SkillsComponentComponent } from './app-components/skills-component/skil
 import { SkillBoxComponentComponent } from './app-components/skill-box-component/skill-box-component.component';
 import { NavbarComponentComponent } from './app-components/navbar-component/navbar-component.component';
 import { ProjectPageCompComponent } from './app-components/project-page-comp/project-page-comp.component';
+import { ProjectBoxComponent } from './app-components/project-box/project-box.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ProjectPageCompComponent } from './app-components/project-page-comp/pro
     LinksComponent,
     HomePageComponent,
     ProjectPageComponent,
-    ProjectPageCompComponent
+    ProjectPageCompComponent,
+    ProjectBoxComponent
   ],
   imports: [
     BrowserModule,
