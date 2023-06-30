@@ -25,12 +25,13 @@
   justify-content: center;
 }
 #project-box-btns-container button {
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   border: 0;
   border-radius:0.3em;
   color: white;
   padding: 0.6em;
+  font-size: 0.8em;
   font-weight: 700;
   background-color: #5a41d1;
 }
