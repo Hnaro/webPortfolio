@@ -44,16 +44,21 @@
 
 @media screen and (min-width: 770px){
   #project-box-container {
-    width:25%;
+    width:20%;
   }
 }
 
 @media screen and (min-width: 1300px) {
   #project-box-container {
-    width: 22%;
+    margin: 0;
+    width:23%;
+    margin: 0.3em
   }
   #project-box-btns-container button {
     margin: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 0;
     margin-left: 1em;
     margin-right: 1em;
   }
