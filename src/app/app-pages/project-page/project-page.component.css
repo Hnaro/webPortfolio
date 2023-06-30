@@ -28,3 +28,33 @@
   color: white;
   box-shadow: 0em 0.2em 0.2em 0.1em rgb(214, 214, 214);
 }
+@media screen and (min-width: 1000px) {
+  #projectDiv-baseContainer {
+    width: 70%;
+    padding: 3em;
+    box-shadow: 0em 1em 1em 0.1em rgb(199, 199, 199);
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #project-contents-container h1 {
+    font-size: 1.6em;
+
+    margin-bottom: 2em;
+  }
+  #project-intro-container h1 {
+    font-size: 1.9em;
+  }
+  #project-intro-container p {
+    font-size: 1em;
+  }
+  #project-intro-container {
+    padding: 7em;
+    margin: 3em;
+  }
+  #projectDiv-baseContainer {
+    width: 60%;
+    padding: 3em;
+    box-shadow: 0em 1em 1em 0.1em rgb(199, 199, 199);
+  }
+}

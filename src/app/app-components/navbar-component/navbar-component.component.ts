@@ -21,8 +21,6 @@ export class NavbarComponentComponent implements OnInit {
   ismouseOverSkills: boolean | undefined;
 
   ngOnInit(): void {
-    this.isHomeActive = false;
-    this.homeIsActive = !this.isHomeActive;
   }
 
   sidebar(): void {

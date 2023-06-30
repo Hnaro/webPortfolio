@@ -1,8 +1,12 @@
 #project-box-container {
+  display: inline-block;
   padding: 2.2em;
   background-color: white;
-  width: 65%;
+  width: 60%;
   margin: 0 auto;
+  margin-top: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   text-align: left;
   box-shadow: 0em 0.2em 0.2em 0.1em rgb(214, 214, 214);
 }
@@ -30,3 +34,27 @@
   font-weight: 700;
   background-color: #5a41d1;
 }
+
+@media screen and (min-width: 500px){
+  #project-box-container {
+    width:30%;
+  }
+}
+
+@media screen and (min-width: 770px){
+  #project-box-container {
+    width:25%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #project-box-container {
+    width: 22%;
+  }
+  #project-box-btns-container button {
+    margin: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+

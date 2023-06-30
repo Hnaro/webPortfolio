@@ -19,7 +19,6 @@ export class FooterComponentComponent {
     const windowHeight = window.innerHeight;
     //console.log(this.divfooter.nativeElement.getBoundingClientRect());
     if (this.divfooter.nativeElement.getBoundingClientRect().top <= 700){
-      console.log(this.divfooter.nativeElement.getBoundingClientRect().top)
       this.triggerEaseUpAnimation = true;
     }
   }

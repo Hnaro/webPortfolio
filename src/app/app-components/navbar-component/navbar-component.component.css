@@ -42,7 +42,7 @@
   float: right;
   width: 102px;
   height: 40px;
-  padding: 1.2em;
+  padding-top: 1.3em;
 }
 #container-img img:hover {
   cursor: pointer;
