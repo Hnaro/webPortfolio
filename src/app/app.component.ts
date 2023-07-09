@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActiveLinkService } from './app-services/active-link.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,16 +8,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
   animations: []
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   isVisible:boolean | undefined;
   messageFromParent:string="";
 
-  constructor() {}
+  projectState: boolean = false;
 
+  constructor(private route:ActivatedRoute) {
+    console.log("launched")
+  }
+  ngOnInit(): void {
+
+  }
   recieveUpdatedData(e:any) {
     this.isVisible = e;
   }
-
   handlevisibility(e:any) {
     this.isVisible = e;
   }

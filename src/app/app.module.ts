@@ -18,6 +18,7 @@ import { SkillBoxComponentComponent } from './app-components/skill-box-component
 import { NavbarComponentComponent } from './app-components/navbar-component/navbar-component.component';
 import { ProjectPageCompComponent } from './app-components/project-page-comp/project-page-comp.component';
 import { ProjectBoxComponent } from './app-components/project-box/project-box.component';
+import { ActiveLinkService } from './app-services/active-link.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import { ProjectBoxComponent } from './app-components/project-box/project-box.co
     ReactiveFormsModule,
     BrowserAnimationsModule
   ],
-  providers: [ ],
+  providers: [ActiveLinkService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

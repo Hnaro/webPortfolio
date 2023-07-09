@@ -35,6 +35,20 @@
   font-weight: 700;
   background-color: #5a41d1;
 }
+#project-box-btns-container a {
+  text-decoration: none;
+  color: white;
+}
+#project-box-btns-container a:hover {
+  color: #5a41d1;
+}
+#project-box-btns-container button:hover {
+  border: 0.2em solid #5a41d1;
+  cursor: pointer;
+  background-color: white;
+  color: #5a41d1;
+  transition: 0.3s;
+}
 
 @media screen and (min-width: 500px){
   #project-box-container {

@@ -10,7 +10,10 @@ const routes: Routes = [
   },
   {
     path: 'projects',
-    component: ProjectPageComponent
+    component: ProjectPageComponent,
+    data: {
+      projectisActive: "some data"
+    }
   }
 ];
 

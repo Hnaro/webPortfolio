@@ -20,14 +20,16 @@
       <div id="navbar-btn-container">
         <button
         routerLink="/"
-          (click)="homePgBtn()"
-          [class.isHomeActive]="homeIsActive">
+        routerLinkActive="isHomeActive"
+        [routerLinkActiveOptions]="{exact: true}"
+          (click)="homePgBtn()">
           <span>Home</span>
         </button>
         <button
         routerLink="/projects"
-        (click)="skillsPgBtn()"
-        [class.isHomeActive]="skillsIsActive">
+        routerLinkActive="isHomeActive"
+        [routerLinkActiveOptions]="{exact: true}"
+        (click)="skillsPgBtn()">
         <span>Projects</span>
       </button>
       </div>
