@@ -2,7 +2,8 @@
   <div id="project-img">
   </div>
   <h4>{{ projectTitle }}</h4>
-  <p>
+  <button id="seemore-btn" (click)="onclick()">{{btnName}}</button>
+  <p [@ease-up]="isState ? 'hidden' : 'slideUp' " [hidden]="isHover" >
     {{ description }}
   </p>
   <div id="project-box-btns-container">

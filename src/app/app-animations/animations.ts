@@ -1,5 +1,6 @@
 import { state, trigger, animate, transition, style } from '@angular/animations';
 
+
 export let easeUp = trigger('ease-up', [
   state('hidden', style({
     opacity: 0,
@@ -50,7 +51,7 @@ export let slideInLeftToRight = trigger('slideInLeftToRight', [
       style({
         opacity: 0,
         transform: 'translateX(-20%)'
-      }), 
+      }),
       animate('1s')
     ])
   ])

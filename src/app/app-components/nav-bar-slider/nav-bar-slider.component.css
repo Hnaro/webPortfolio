@@ -66,6 +66,10 @@ li button {
   background: transparent;
 }
 
+li button:hover {
+  cursor: pointer;
+}
+
 .isHomeActive {
   margin-top: 1em;
   padding-top: 0.5em;

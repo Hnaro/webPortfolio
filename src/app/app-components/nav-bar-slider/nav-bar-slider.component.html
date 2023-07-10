@@ -6,8 +6,12 @@
   </div>
   <div id="slider-bar-link-cont">
     <ul>
-      <li [class.isHomeActive]="isHomePageBtnStyleActive" ><button routerLink="/" (click)="onClickHomePage()">Home</button></li>
-      <li [class.isHomeActive]="isProjectpageBtnStyleActive"><button routerLink="/projects" (click)="onClickProjects()">Projects</button></li>
+      <li routerLinkActive="isHomeActive" [routerLinkActiveOptions]="{exact: true}"><button
+        routerLink="/"
+        (click)="onClickHomePage()">Home</button></li>
+      <li routerLinkActive="isHomeActive" [routerLinkActiveOptions]="{exact: true}" ><button
+        routerLink="/projects"
+        (click)="onClickProjects()">Projects</button></li>
       <!-- <li><button>Projects</button></li> -->
     </ul>
   </div>

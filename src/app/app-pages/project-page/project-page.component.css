@@ -28,6 +28,10 @@
   color: white;
   box-shadow: 0em 0.2em 0.2em 0.1em rgb(214, 214, 214);
 }
+#project-contents-container {
+  margin-top: 3em;
+  margin-bottom: 5em;
+}
 @media screen and (min-width: 1000px) {
   #projectDiv-baseContainer {
     width: 70%;

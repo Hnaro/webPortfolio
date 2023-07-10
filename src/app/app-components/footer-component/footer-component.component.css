@@ -130,6 +130,7 @@
     .aboutpg-footer-bg-style {
       height: 22em;
       margin-top: -2em;
+      position: inherit;
     }
     #aboutpage-style-container header{
       font-size: 1.5em;
