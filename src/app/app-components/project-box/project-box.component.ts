@@ -11,6 +11,8 @@ export class ProjectBoxComponent{
   @Input() url: string = "https://www.youtube.com/";
   @Input() description: string = "";
   @Input() projectTitle: string = "";
+  @Input() imageUrl: string = "";
+  @Input() gitHubUrl: string = "";
   isHover: boolean = true;
   isState: boolean = true;
   btnName: string = "See more"

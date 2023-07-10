@@ -15,7 +15,8 @@ export class ProjectPageComponent implements OnInit{
   descriptionXsotic: string = "This website is an entertainment website that is using mongodb for backend database. \n "+
   "it has mini games that is created only using angular tools and node express js with the help of database and localstorage in angular"
   defautDesc: string = "this website is coming soon... Sorry for the inconvenience.."
-  @Output() projectrouteIsActive = new EventEmitter()
+  gameinfowebImageUrl: string = "../../../assets/img/gameinfowebCover.png"
+  gameinfowebgitHubUrl: string = "https://github.com/Hnaro/gameinfowebsite-project"
   constructor(private activeLink: ActiveLinkService, private route: ActivatedRoute) {
     this.activeLink.setHomeState("Message from home");
   }

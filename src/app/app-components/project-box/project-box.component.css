@@ -12,9 +12,13 @@
 }
 #project-img {
   margin: 0 auto;
-  background-color: grey;
   height:10em;
-  width: 14em auto;
+}
+#project-img img {
+  width: 100%;
+  height:8em;
+  border: 0.1em solid #5a41d1;
+  border-radius: 0.5em;
 }
 #project-box-container p {
   font-size: 0.8em;
@@ -75,12 +79,19 @@
   #project-box-container {
     width:30%;
   }
+  #project-img img {
+    height: 8em;
+  }
 }
 
 @media screen and (min-width: 770px){
   #project-box-container {
     width:20%;
   }
+  #project-img img {
+    height: 7em;
+  }
+
 }
 
 @media screen and (min-width: 1300px) {
@@ -88,6 +99,9 @@
     margin: 0;
     width:23%;
     margin: 0.3em
+  }
+  #project-img img {
+    height: 9em;
   }
   #project-box-btns-container button {
     margin: 0;

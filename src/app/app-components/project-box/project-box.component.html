@@ -1,5 +1,6 @@
 <div id="project-box-container">
   <div id="project-img">
+    <img [src]="imageUrl" alt="">
   </div>
   <h4>{{ projectTitle }}</h4>
   <button id="seemore-btn" (click)="onclick()">{{btnName}}</button>
@@ -7,7 +8,7 @@
     {{ description }}
   </p>
   <div id="project-box-btns-container">
-    <button>See Code</button>
+    <a [href]="gitHubUrl"><button>See Code</button></a>
     <a [href]="url"><button>Live Demo</button></a>
   </div>
 </div>
