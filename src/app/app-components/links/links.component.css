@@ -35,4 +35,10 @@
   .mobile-view {
     display: block;
   }
+  #welc-page-links-container img:hover {
+    width: 1.7em;
+    height: 1.7em;
+    border: 0.2em solid #ec3878;
+    transition: 0.2s;
+  }
 }
