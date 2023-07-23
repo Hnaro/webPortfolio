@@ -8,7 +8,7 @@ import { easeUp } from 'src/app/app-animations/animations';
   animations: [easeUp]
 })
 export class ProjectBoxComponent{
-  @Input() url: string = "https://www.youtube.com/";
+  @Input() url: string = "";
   @Input() description: string = "";
   @Input() projectTitle: string = "";
   @Input() imageUrl: string = "";

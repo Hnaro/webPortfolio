@@ -1,4 +1,5 @@
 <div id="project-box-container">
+  <span><div><h5>Site Status: {{ url ? "Online" : "Offline"}}</h5></div><div [class.siteStatus]="url != ''"></div></span><br><br>
   <div id="project-img">
     <img [src]="imageUrl" alt="">
   </div>
@@ -7,8 +8,8 @@
   <p [@ease-up]="isState ? 'hidden' : 'slideUp' " [hidden]="isHover" >
     {{ description }}
   </p>
-  <div id="project-box-btns-container">
-    <a [href]="gitHubUrl"><button>See Code</button></a>
-    <a [href]="url"><button>Live Demo</button></a>
+  <div  id="project-box-btns-container">
+    <a [href]="gitHubUrl"><button [disabled]="gitHubUrl == '' ">See Code</button></a>
+    <a [href]="url"><button [disabled]="url == ''">Live Demo</button></a>
   </div>
 </div>
